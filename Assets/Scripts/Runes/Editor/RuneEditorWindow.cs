@@ -59,7 +59,6 @@ public class RuneEditorWindow : EditorWindow
         if (e.type == EventType.MouseDown && e.button == 0)
         {
             isDrawing = true;
-            drawnPoints.Clear();
             addPoint(e.mousePosition);
             e.Use();
         }
