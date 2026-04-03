@@ -1,0 +1,59 @@
+using UnityEngine;
+
+public abstract class AbstractEnemy : MonoBehaviour
+{
+    [Header("Stats")] 
+    [SerializeField] protected float maxHealth;
+    [SerializeField] protected float moveSpeed;
+    [SerializeField] protected float contactDamage;
+
+    protected float currentHealth;
+    protected Transform player;
+
+    protected virtual void Start()
+    {
+        currentHealth = maxHealth;
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
+        
+    }
+
+    protected virtual void Update()
+    {
+        move();
+        attack();
+    }
+
+    protected virtual void takeDamage(float damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            die();
+        }
+    }
+
+    protected virtual void die()
+    {
+        Destroy(gameObject);
+    }
+    
+    protected abstract void move();
+    protected abstract void attack();
+
+    public float getContactDamage()
+    {
+        return contactDamage;
+    }
+
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        HandleCollision(collision);
+    }
+    
+    protected abstract void HandleCollision(Collider2D collision);
+
+}
