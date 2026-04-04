@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 87626fdd73aae78458e6ea6a3eca07f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3445554234766692004
+    second: PenguinWalkSS_0
+  - first:
+      213: -1154890999057823889
+    second: PenguinWalkSS_1
+  - first:
+      213: -629048406368303779
+    second: PenguinWalkSS_2
+  - first:
+      213: -6205788942442273401
+    second: PenguinWalkSS_3
+  - first:
+      213: -3154528961327215226
+    second: PenguinWalkSS_4
+  - first:
+      213: -8437062651947725449
+    second: PenguinWalkSS_5
+  - first:
+      213: -5318138086464963130
+    second: PenguinWalkSS_6
+  - first:
+      213: -3768288033609440965
+    second: PenguinWalkSS_7
+  - first:
+      213: -6878705653195651629
+    second: PenguinWalkSS_8
+  - first:
+      213: -6986458286788459035
+    second: PenguinWalkSS_9
+  - first:
+      213: 139821861703912440
+    second: PenguinWalkSS_10
+  - first:
+      213: 8067563087488144211
+    second: PenguinWalkSS_11
+  - first:
+      213: -1822632018365763852
+    second: PenguinWalkSS_12
+  - first:
+      213: -5298853723189708614
+    second: PenguinWalkSS_13
+  - first:
+      213: 5043217246368839042
+    second: PenguinWalkSS_14
+  - first:
+      213: -135506164526306265
+    second: PenguinWalkSS_15
+  - first:
+      213: 3247236137489949420
+    second: PenguinWalkSS_16
+  - first:
+      213: 6166611131181520333
+    second: PenguinWalkSS_17
+  - first:
+      213: 96600830051040982
+    second: PenguinWalkSS_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PenguinWalkSS_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 19
+        width: 65
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c517366cdaeee20d0800000000000000
+      internalID: -3445554234766692004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 19
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67ccd651c009ffe0800000000000000
+      internalID: -1154890999057823889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 19
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5544e7aecb2547f0800000000000000
+      internalID: -629048406368303779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_3
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 19
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7856ea626db90e9a0800000000000000
+      internalID: -6205788942442273401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_4
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 19
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68dc8628f9cd834d0800000000000000
+      internalID: -3154528961327215226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_5
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 19
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77dc0f2383889ea80800000000000000
+      internalID: -8437062651947725449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_6
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 19
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdb7c9469d2236b0800000000000000
+      internalID: -5318138086464963130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_7
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 19
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31aa59aff954bbc0800000000000000
+      internalID: -3768288033609440965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_8
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 19
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d54dc247ade980a0800000000000000
+      internalID: -6878705653195651629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_9
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 19
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5c3e9343d1b0f90800000000000000
+      internalID: -6986458286788459035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_10
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 18
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb02be0e3fb0f100800000000000000
+      internalID: 139821861703912440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_11
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 18
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353d8c062edb5ff60800000000000000
+      internalID: 8067563087488144211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_12
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 18
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe2e0506d5b4b6e0800000000000000
+      internalID: -1822632018365763852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_13
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 18
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab875800d90b676b0800000000000000
+      internalID: -5298853723189708614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_14
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 19
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28530fe8d5b1df540800000000000000
+      internalID: 5043217246368839042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_15
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 19
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ca88e7cd59e1ef0800000000000000
+      internalID: -135506164526306265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_16
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 19
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce266ecff00801d20800000000000000
+      internalID: 3247236137489949420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_17
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 19
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc55b06d624349550800000000000000
+      internalID: 6166611131181520333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PenguinWalkSS_18
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 19
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de333071f1375100800000000000000
+      internalID: 96600830051040982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PenguinWalkSS_0: -3445554234766692004
+      PenguinWalkSS_1: -1154890999057823889
+      PenguinWalkSS_10: 139821861703912440
+      PenguinWalkSS_11: 8067563087488144211
+      PenguinWalkSS_12: -1822632018365763852
+      PenguinWalkSS_13: -5298853723189708614
+      PenguinWalkSS_14: 5043217246368839042
+      PenguinWalkSS_15: -135506164526306265
+      PenguinWalkSS_16: 3247236137489949420
+      PenguinWalkSS_17: 6166611131181520333
+      PenguinWalkSS_18: 96600830051040982
+      PenguinWalkSS_2: -629048406368303779
+      PenguinWalkSS_3: -6205788942442273401
+      PenguinWalkSS_4: -3154528961327215226
+      PenguinWalkSS_5: -8437062651947725449
+      PenguinWalkSS_6: -5318138086464963130
+      PenguinWalkSS_7: -3768288033609440965
+      PenguinWalkSS_8: -6878705653195651629
+      PenguinWalkSS_9: -6986458286788459035
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
