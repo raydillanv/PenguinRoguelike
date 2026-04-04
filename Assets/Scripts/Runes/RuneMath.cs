@@ -14,10 +14,10 @@ public static class RuneMath
 
     public static float comparePointLists(List<Vector2> inputPoints, List<Vector2> targetPoints)
     {
-        if (inputPoints.Count != targetPoints.Count)
-        {
-            return float.MaxValue;
-        }
+        // if (inputPoints.Count != targetPoints.Count)
+        // {
+        //     return float.MaxValue;
+        // }
 
         float totalDist = 0f;
 

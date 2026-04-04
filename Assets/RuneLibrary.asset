@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: RuneLibrary
   m_EditorClassIdentifier: Assembly-CSharp::RuneLibrary
   runes:
-  - {fileID: 11400000, guid: 7cd1eac8adb173544af5cb46e4a91082, type: 2}
+  - {fileID: 11400000, guid: 388961ccda7773142ad97fee48b74281, type: 2}
+  - {fileID: 11400000, guid: 42801a6b1d64ab34586a9e2f3172fc08, type: 2}
+  - {fileID: 11400000, guid: ff96251439e618847bd3fd685b5a9888, type: 2}

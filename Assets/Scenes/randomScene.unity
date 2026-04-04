@@ -284,13 +284,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 632302966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf2953c2e31d343499f93a1aada6d6a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b3a87b2e632c4a4db04b5bf2acd0efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBehaviour
-  moveSpeed: 5
-  acceleration: 15
-  slideSpeed: 8
-  slideAcceleration: 10
+  moveSpeed: 10
+  acceleration: 20
+  slideSpeed: 15
+  slideAcceleration: 8
   lineRenderer: {fileID: 632302970}
   minPointDistance: 0.15
   maxTrailPoints: 40
