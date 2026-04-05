@@ -17,6 +17,18 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void OnEnable()
+    {
+        // subscirbes to OnCurrencyLooted
+        DroppedLoot.OnCurrencyLooted += HandleOnCurrencyLooted;
+    }
+
+    private void OnDisable()
+    {
+        // unsubscirbes to OnCurrencyLooted
+        DroppedLoot.OnCurrencyLooted -= HandleOnCurrencyLooted;
+    }
+
     public int GetCurrency()
     {
         return currency;
@@ -40,6 +52,13 @@ public class GameManager : MonoBehaviour
     public void AddKillCount(int amount)
     {
         kills += amount;
+    }
+
+    // listeners for events
+    private void HandleOnCurrencyLooted(int amount)
+    {
+        AddCurrency(amount);
+        print(amount + " added to currency. Current currency: " +  currency);
     }
 
 }
