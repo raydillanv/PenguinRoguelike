@@ -1,19 +1,65 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+
 
 public class TextReader : MonoBehaviour
 {
-    // helpful tutorial: https://www.youtube.com/watch?v=1OOWHB-BOAY
+    //public TextAsset textFileToParse;
+    private DialogueController _dialogueController;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private List<string> _lines = new List<string>();
+    private int _currentLine = 0;
+    private string _speaker;
+    private string _body;
+    public bool NoMoreLines = false;
+
+    public void LoadText(TextAsset textAsset)
     {
-        
+        _lines = new List<string>(
+            textAsset.text.Split(new[] { "\r\n", "\n" }, System.StringSplitOptions.RemoveEmptyEntries)
+        );
+        _currentLine = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void parseText()
     {
-        
+        if (_currentLine >= _lines.Count)
+        {
+            Debug.Log("No more lines.");
+            NoMoreLines = true;
+            return;
+        }
+
+        string line = _lines[_currentLine];
+        string[] parts = line.Split(new[] { ':' }, 2);
+
+        if (parts.Length == 2)
+        {
+            _speaker = parts[0].Trim();
+            _body = parts[1].Trim();
+        }
+
+        _currentLine++;
+    }
+
+    public void PassText()
+    {
+        parseText();
+        _dialogueController.UpdateDialogue(_speaker, _body);
+    }
+
+    public void PassNewText(TextAsset textAsset)
+    {
+        LoadText(textAsset);
+        NoMoreLines = false;
+        PassText(); // immediately parse and display the first line
+    }
+
+    private void Start()
+    {
+        _dialogueController = GameObject.FindGameObjectWithTag("DialogueController").GetComponent<DialogueController>();
+        //LoadText(textFileToParse);
+        //PassText();
     }
 }

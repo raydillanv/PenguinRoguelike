@@ -3,7 +3,9 @@ using UnityEngine;
 public class NPC : MonoBehaviour, IInteractable
 {
     public bool TalkedAlready {  get; private set; }
-    [SerializeField] private DialogueController _dialogueController;
+    [SerializeField] private Dialogue _dialogue; // set this in inspector on your NPC
+
+    public bool hasDialogue = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,7 +31,12 @@ public class NPC : MonoBehaviour, IInteractable
         //f (!CanInteract()) return;
         // interact with npc
         print("Interacted with NPC.");
-        _dialogueController.OpenPanel();
+        if (hasDialogue)
+        {
+            _dialogue.HandleDialogue();
+        }
+        
+        // else do something else..
     }
 
 }
