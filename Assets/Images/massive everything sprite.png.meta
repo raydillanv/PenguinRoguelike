@@ -1,0 +1,1352 @@
+fileFormatVersion: 2
+guid: 9682147f89d1bfb4fb94c7ac104c5882
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3002419758611725042
+    second: massive everything sprite_0
+  - first:
+      213: -134391807058211052
+    second: massive everything sprite_1
+  - first:
+      213: -4289279328455247126
+    second: massive everything sprite_2
+  - first:
+      213: -1042037205536257705
+    second: massive everything sprite_3
+  - first:
+      213: -8413283031461556530
+    second: massive everything sprite_4
+  - first:
+      213: 7919238288556011949
+    second: massive everything sprite_5
+  - first:
+      213: 4308205395904457979
+    second: massive everything sprite_6
+  - first:
+      213: 7327448714764266540
+    second: massive everything sprite_7
+  - first:
+      213: 7062934601102109067
+    second: massive everything sprite_8
+  - first:
+      213: 1213447785588794612
+    second: massive everything sprite_9
+  - first:
+      213: -5080253506292812290
+    second: massive everything sprite_10
+  - first:
+      213: -4331960589209252254
+    second: massive everything sprite_11
+  - first:
+      213: 1887484622853472645
+    second: massive everything sprite_12
+  - first:
+      213: -8477750160311947123
+    second: massive everything sprite_13
+  - first:
+      213: 6489232291686107963
+    second: massive everything sprite_14
+  - first:
+      213: -2451801879261328864
+    second: massive everything sprite_15
+  - first:
+      213: 7642581456556660901
+    second: massive everything sprite_16
+  - first:
+      213: -1752506130951687401
+    second: massive everything sprite_17
+  - first:
+      213: -8686294730264426511
+    second: massive everything sprite_18
+  - first:
+      213: 7131983018855335448
+    second: massive everything sprite_19
+  - first:
+      213: 8873113727830475058
+    second: massive everything sprite_20
+  - first:
+      213: 7905446570497419618
+    second: massive everything sprite_21
+  - first:
+      213: -7625494477105053142
+    second: massive everything sprite_22
+  - first:
+      213: -2034437656830998639
+    second: massive everything sprite_23
+  - first:
+      213: 1866929806595589981
+    second: massive everything sprite_24
+  - first:
+      213: -7144934400798217343
+    second: massive everything sprite_25
+  - first:
+      213: 8959492121719294957
+    second: massive everything sprite_26
+  - first:
+      213: -4861313301148946036
+    second: massive everything sprite_27
+  - first:
+      213: -4144188830485447337
+    second: massive everything sprite_28
+  - first:
+      213: -5666676757241014857
+    second: massive everything sprite_29
+  - first:
+      213: 1442813978321151108
+    second: massive everything sprite_30
+  - first:
+      213: -9108340693648738315
+    second: massive everything sprite_31
+  - first:
+      213: -6764174596930226290
+    second: massive everything sprite_32
+  - first:
+      213: 4235865823231225423
+    second: massive everything sprite_33
+  - first:
+      213: 1574201304709184273
+    second: massive everything sprite_34
+  - first:
+      213: -1536516252975295977
+    second: massive everything sprite_35
+  - first:
+      213: 3874921344571377842
+    second: massive everything sprite_36
+  - first:
+      213: 8350308128183651873
+    second: massive everything sprite_37
+  - first:
+      213: -308687512742121037
+    second: massive everything sprite_38
+  - first:
+      213: -1376614405840993490
+    second: massive everything sprite_39
+  - first:
+      213: 8752741080403238634
+    second: massive everything sprite_40
+  - first:
+      213: -8670481095517939581
+    second: massive everything sprite_41
+  - first:
+      213: 2165217555129476676
+    second: massive everything sprite_42
+  - first:
+      213: -7526787741302117242
+    second: massive everything sprite_43
+  - first:
+      213: 4703204137690823323
+    second: massive everything sprite_44
+  - first:
+      213: 8659794865693656479
+    second: massive everything sprite_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: massive everything sprite_0
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 5871
+        width: 89
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05855513234556d0800000000000000
+      internalID: -3002419758611725042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_1
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 5871
+        width: 89
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f829f0d5b822ef0800000000000000
+      internalID: -134391807058211052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_2
+      rect:
+        serializedVersion: 2
+        x: 4764
+        y: 5872
+        width: 80
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeabff42d2b6974c0800000000000000
+      internalID: -4289279328455247126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_3
+      rect:
+        serializedVersion: 2
+        x: 6674
+        y: 5871
+        width: 98
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7594549bea0f981f0800000000000000
+      internalID: -1042037205536257705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_4
+      rect:
+        serializedVersion: 2
+        x: 8600
+        y: 5871
+        width: 80
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece89ea88a30e3b80800000000000000
+      internalID: -8413283031461556530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_5
+      rect:
+        serializedVersion: 2
+        x: 10520
+        y: 5871
+        width: 80
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1bd09f349c6ed60800000000000000
+      internalID: 7919238288556011949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_6
+      rect:
+        serializedVersion: 2
+        x: 12449
+        y: 5878
+        width: 74
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc6e425bf1d9cb30800000000000000
+      internalID: 4308205395904457979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_7
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 4797
+        width: 73
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2caa6998c350b560800000000000000
+      internalID: 7327448714764266540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_8
+      rect:
+        serializedVersion: 2
+        x: 2841
+        y: 4791
+        width: 80
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89a1824995940260800000000000000
+      internalID: 7062934601102109067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_9
+      rect:
+        serializedVersion: 2
+        x: 4732
+        y: 4753
+        width: 104
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f42185f45807d010800000000000000
+      internalID: 1213447785588794612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_10
+      rect:
+        serializedVersion: 2
+        x: 6672
+        y: 4752
+        width: 104
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5fb743a505f79b0800000000000000
+      internalID: -5080253506292812290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_11
+      rect:
+        serializedVersion: 2
+        x: 8593
+        y: 4747
+        width: 104
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ec03bbbc8c1e3c0800000000000000
+      internalID: -4331960589209252254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_12
+      rect:
+        serializedVersion: 2
+        x: 10503
+        y: 4751
+        width: 104
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5818130a341b13a10800000000000000
+      internalID: 1887484622853472645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_13
+      rect:
+        serializedVersion: 2
+        x: 12353
+        y: 4751
+        width: 256
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d807810752bf85a80800000000000000
+      internalID: -8477750160311947123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_14
+      rect:
+        serializedVersion: 2
+        x: 3877
+        y: 3645
+        width: 1209
+        height: 645
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bc1fa43626e0a50800000000000000
+      internalID: 6489232291686107963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_15
+      rect:
+        serializedVersion: 2
+        x: 5759
+        y: 3611
+        width: 1285
+        height: 710
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a4ef65e2379fdd0800000000000000
+      internalID: -2451801879261328864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_16
+      rect:
+        serializedVersion: 2
+        x: 7746
+        y: 3659
+        width: 1159
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a81c05b757ef0a60800000000000000
+      internalID: 7642581456556660901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_17
+      rect:
+        serializedVersion: 2
+        x: 9637
+        y: 4107
+        width: 512
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7133ee585f8dda7e0800000000000000
+      internalID: -1752506130951687401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_18
+      rect:
+        serializedVersion: 2
+        x: 10295
+        y: 4106
+        width: 551
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7cd3cf6f4147780800000000000000
+      internalID: -8686294730264426511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_19
+      rect:
+        serializedVersion: 2
+        x: 11606
+        y: 3937
+        width: 116
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8168dfec4c4e9f260800000000000000
+      internalID: 7131983018855335448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_20
+      rect:
+        serializedVersion: 2
+        x: 12602
+        y: 3884
+        width: 118
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2314af67ce1a32b70800000000000000
+      internalID: 8873113727830475058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_21
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 3725
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269245165c9c5bd60800000000000000
+      internalID: 7905446570497419618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_22
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 3669
+        width: 381
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a224377bc2dcc2690800000000000000
+      internalID: -7625494477105053142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_23
+      rect:
+        serializedVersion: 2
+        x: 11830
+        y: 3737
+        width: 106
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19709e2eab934c3e0800000000000000
+      internalID: -2034437656830998639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_24
+      rect:
+        serializedVersion: 2
+        x: 12207
+        y: 3688
+        width: 107
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5708b684caa8e910800000000000000
+      internalID: 1866929806595589981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_25
+      rect:
+        serializedVersion: 2
+        x: 11905
+        y: 3689
+        width: 117
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b24f8940818dc90800000000000000
+      internalID: -7144934400798217343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_26
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 2657
+        width: 106
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb4df28d92865c70800000000000000
+      internalID: 8959492121719294957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_27
+      rect:
+        serializedVersion: 2
+        x: 10532
+        y: 2704
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81b2271f45298cb0800000000000000
+      internalID: -4861313301148946036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_28
+      rect:
+        serializedVersion: 2
+        x: 4746
+        y: 2657
+        width: 116
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75df5cc2732ec76c0800000000000000
+      internalID: -4144188830485447337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_29
+      rect:
+        serializedVersion: 2
+        x: 6677
+        y: 2628
+        width: 107
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5dfab338beb51b0800000000000000
+      internalID: -5666676757241014857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_30
+      rect:
+        serializedVersion: 2
+        x: 8612
+        y: 2634
+        width: 116
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484ecce3ba7e50410800000000000000
+      internalID: 1442813978321151108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_31
+      rect:
+        serializedVersion: 2
+        x: 12459
+        y: 2658
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7f4dda56ca89180800000000000000
+      internalID: -9108340693648738315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_32
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 2609
+        width: 117
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87b04fca03d022a0800000000000000
+      internalID: -6764174596930226290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_33
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 2127
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e2aed0681d8ca30800000000000000
+      internalID: 4235865823231225423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_34
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 2127
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bb5240fbfa8d510800000000000000
+      internalID: 1574201304709184273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_35
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 1603
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7121bc5db923daae0800000000000000
+      internalID: -1536516252975295977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_36
+      rect:
+        serializedVersion: 2
+        x: 4808
+        y: 1609
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b881c3ce6c76c530800000000000000
+      internalID: 3874921344571377842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_37
+      rect:
+        serializedVersion: 2
+        x: 6678
+        y: 1623
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e8171300142e370800000000000000
+      internalID: 8350308128183651873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_38
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 1581
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b13868b75257bbf0800000000000000
+      internalID: -308687512742121037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_39
+      rect:
+        serializedVersion: 2
+        x: 8619
+        y: 1579
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e238923dd7845ece0800000000000000
+      internalID: -1376614405840993490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1047
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee576c73abf77970800000000000000
+      internalID: 8752741080403238634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_41
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1047
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388d9edb1634ca780800000000000000
+      internalID: -8670481095517939581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_42
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 1066
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446aee205e56c0e10800000000000000
+      internalID: 2165217555129476676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_43
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1047
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c2ceb8d6a7b8790800000000000000
+      internalID: -7526787741302117242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_44
+      rect:
+        serializedVersion: 2
+        x: 3855
+        y: 1071
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a753d9e33254140800000000000000
+      internalID: 4703204137690823323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massive everything sprite_45
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1047
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f950c6d7c85cd2870800000000000000
+      internalID: 8659794865693656479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      massive everything sprite_0: -3002419758611725042
+      massive everything sprite_1: -134391807058211052
+      massive everything sprite_10: -5080253506292812290
+      massive everything sprite_11: -4331960589209252254
+      massive everything sprite_12: 1887484622853472645
+      massive everything sprite_13: -8477750160311947123
+      massive everything sprite_14: 6489232291686107963
+      massive everything sprite_15: -2451801879261328864
+      massive everything sprite_16: 7642581456556660901
+      massive everything sprite_17: -1752506130951687401
+      massive everything sprite_18: -8686294730264426511
+      massive everything sprite_19: 7131983018855335448
+      massive everything sprite_2: -4289279328455247126
+      massive everything sprite_20: 8873113727830475058
+      massive everything sprite_21: 7905446570497419618
+      massive everything sprite_22: -7625494477105053142
+      massive everything sprite_23: -2034437656830998639
+      massive everything sprite_24: 1866929806595589981
+      massive everything sprite_25: -7144934400798217343
+      massive everything sprite_26: 8959492121719294957
+      massive everything sprite_27: -4861313301148946036
+      massive everything sprite_28: -4144188830485447337
+      massive everything sprite_29: -5666676757241014857
+      massive everything sprite_3: -1042037205536257705
+      massive everything sprite_30: 1442813978321151108
+      massive everything sprite_31: -9108340693648738315
+      massive everything sprite_32: -6764174596930226290
+      massive everything sprite_33: 4235865823231225423
+      massive everything sprite_34: 1574201304709184273
+      massive everything sprite_35: -1536516252975295977
+      massive everything sprite_36: 3874921344571377842
+      massive everything sprite_37: 8350308128183651873
+      massive everything sprite_38: -308687512742121037
+      massive everything sprite_39: -1376614405840993490
+      massive everything sprite_4: -8413283031461556530
+      massive everything sprite_40: 8752741080403238634
+      massive everything sprite_41: -8670481095517939581
+      massive everything sprite_42: 2165217555129476676
+      massive everything sprite_43: -7526787741302117242
+      massive everything sprite_44: 4703204137690823323
+      massive everything sprite_45: 8659794865693656479
+      massive everything sprite_5: 7919238288556011949
+      massive everything sprite_6: 4308205395904457979
+      massive everything sprite_7: 7327448714764266540
+      massive everything sprite_8: 7062934601102109067
+      massive everything sprite_9: 1213447785588794612
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
