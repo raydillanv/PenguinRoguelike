@@ -3910,14 +3910,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 651037222543295541, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
-      propertyPath: m_SortingLayer
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 651037222543295541, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -2089007317
-      objectReference: {fileID: 0}
     - target: {fileID: 685030173852735300, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
       propertyPath: m_Name
       value: NPC
@@ -3962,26 +3954,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4103619872221701647, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
-      propertyPath: Repeatable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4103619872221701647, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
-      propertyPath: GiveRandomText
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4103619872221701647, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
-      propertyPath: RandomTexts.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4103619872221701647, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
-      propertyPath: 'RandomTexts.Array.data[0]'
-      value: 
-      objectReference: {fileID: 4900000, guid: a77f033f85a92d14c9f2964a5c3aba74, type: 3}
-    - target: {fileID: 4103619872221701647, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
-      propertyPath: 'RandomTexts.Array.data[1]'
-      value: 
-      objectReference: {fileID: 4900000, guid: fd56a581e8778954d948255acdc0747b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -144,7 +144,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textFileToParse: {fileID: 4900000, guid: 18809d06362aacd47bf1bc995682a759, type: 3}
-  Repeatable: 0
+  Repeatable: 1
+  GiveRandomText: 1
+  RandomTexts:
+  - {fileID: 4900000, guid: a77f033f85a92d14c9f2964a5c3aba74, type: 3}
+  - {fileID: 4900000, guid: fd56a581e8778954d948255acdc0747b, type: 3}
 --- !u!114 &1193504523807857478
 MonoBehaviour:
   m_ObjectHideFlags: 0
