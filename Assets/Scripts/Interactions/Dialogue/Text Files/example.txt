@@ -1,0 +1,4 @@
+Main Character: Hello!
+NPC: Hi.
+Main Character: Do you know what the weather is like in Japan?
+NPC: How could I possibly know that?
