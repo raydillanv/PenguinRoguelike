@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2089007317
+  m_SortingLayer: -1
   m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8805298291337259808, guid: ffb4b7872a1156b468f69fb98ef78b0a, type: 3}
@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textFileToParse: {fileID: 4900000, guid: 18809d06362aacd47bf1bc995682a759, type: 3}
+  Repeatable: 0
 --- !u!114 &1193504523807857478
 MonoBehaviour:
   m_ObjectHideFlags: 0
