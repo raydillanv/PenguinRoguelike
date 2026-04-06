@@ -1,4 +1,5 @@
 Main Character: Hello!
 NPC: Hi.
 Main Character: Do you know what the weather is like in Japan?
-NPC: How could I possibly know that?
+NPC: No. Do you? 
+Main Character: I don't know, but I hear it's always raining in the Rising Sun!
