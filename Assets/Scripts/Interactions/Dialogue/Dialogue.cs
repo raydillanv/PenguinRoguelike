@@ -6,6 +6,7 @@ public class Dialogue : MonoBehaviour
     private DialogueController _dialogueController;
     private TextReader _textReaderRef;
     public TextAsset textFileToParse;
+    public bool Repeatable = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,7 +23,13 @@ public class Dialogue : MonoBehaviour
         _textReaderRef.PassText();
         if (_textReaderRef.NoMoreLines)
         {
+            
             _dialogueController.ClosePanel();
+
+            if (Repeatable)
+            {
+                _textReaderRef.RepeatText();
+            }
         }
     }
 

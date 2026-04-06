@@ -49,6 +49,12 @@ public class TextReader : MonoBehaviour
         _dialogueController.UpdateDialogue(_speaker, _body);
     }
 
+    public void RepeatText()
+    {
+        _currentLine = 0;
+        NoMoreLines = false;
+    }
+
     public void PassNewText(TextAsset textAsset)
     {
         LoadText(textAsset);
