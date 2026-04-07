@@ -42,15 +42,15 @@ public class Sniper : AbstractEnemy
 
     protected override void attack()
     {
-        Vector2 playerVel = playerObject.Velocity;
-        Vector2 predictShot = (Vector2)player.transform.position + (playerVel * .25f);
+        //Vector2 playerVel = playerObject.Velocity;
+        //Vector2 predictShot = (Vector2)player.transform.position + (playerVel * .25f);
         
-        Vector2 shootDir = predictShot - (Vector2) transform.position;
+        //Vector2 shootDir = predictShot - (Vector2) transform.position;
         
         GameObject proj = Instantiate(projectile, transform.position, Quaternion.identity);
 
         AbstractProjectile projectileScript = proj.GetComponent<AbstractProjectile>();
-        projectileScript.setDirection(shootDir);
+        //projectileScript.setDirection(shootDir);
     }
 
     protected override void HandleCollision(Collider2D collision)
