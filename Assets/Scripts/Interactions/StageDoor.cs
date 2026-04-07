@@ -4,12 +4,14 @@ using UnityEngine.SceneManagement;
 public class StageDoor : MonoBehaviour, IInteractable
 {
     private Transform _player;
+    private GameManager _gameManager;
     
     public string sceneName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player").transform;
+        _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -26,5 +28,6 @@ public class StageDoor : MonoBehaviour, IInteractable
     public void Interact()
     {
         SceneManager.LoadScene(sceneName);
+        _gameManager.VisitStage(sceneName);
     }
 }

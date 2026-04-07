@@ -31,6 +31,26 @@ public class GameManager : MonoBehaviour
         DroppedLoot.OnCurrencyLooted -= HandleOnCurrencyLooted;
     }
 
+    public void VisitStage(string stage)
+    {
+        if (stage == "Stage 1")
+        {
+            _Stage1Done = true;
+        }
+        else if (stage == "Stage 2")
+        {
+            _Stage2Done = true;
+        }
+        else if (stage == "Stage 3")
+        {
+            _Stage3Done = true;
+        }
+        else if (stage == "Stage 4")
+        {
+            _Stage4Done = true;
+        }
+    }
+
     public int GetCurrency()
     {
         return currency;
