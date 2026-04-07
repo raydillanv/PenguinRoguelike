@@ -8,8 +8,9 @@ public class Chaser : AbstractEnemy
     void Start()
     {
         base.Start();
+        
         maxHealth = 30f;
-        moveSpeed = 7f;
+        moveSpeed = 5f;
         contactDamage = 10f;
     }
     
@@ -31,8 +32,13 @@ public class Chaser : AbstractEnemy
     }
 
 
-    protected override void HandleCollision(Collider2D collision)
+    protected override void HandleCollision(Collision2D collision)
     {
-        takeDamage(10f);
+        if (collision.collider.gameObject.tag == "Player")
+        {
+            takeDamage(10f);
+        }
+        
+        
     }
 }

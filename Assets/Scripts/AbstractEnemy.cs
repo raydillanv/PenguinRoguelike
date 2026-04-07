@@ -54,11 +54,11 @@ public abstract class AbstractEnemy : MonoBehaviour
         return contactDamage;
     }
 
-    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         HandleCollision(collision);
     }
     
-    protected abstract void HandleCollision(Collider2D collision);
+    protected abstract void HandleCollision(Collision2D collision);
 
 }
