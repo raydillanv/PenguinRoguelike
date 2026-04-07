@@ -4,16 +4,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerBehavior : MonoBehaviour
 {
+    private Rigidbody2D _rb;
 
-    [Header("normalMovement")] 
-    public float moveSpeed;
-    public float acceleration;
-    
-    [Header("slideMovement")]
-    public float slideSpeed;
-    public float slideAcceleration;
-    
-    private Vector2 currVelocity;
+    [Header("Normal Movement")]
+    public float moveSpeed = 5f;
+    public float acceleration = 10f;
+
+    [Header("Slide Movement")]
+    public float slideSpeed = 8f;
+    public float slideAcceleration = 5f;
+
     private Vector2 inputDirection;
     
     [Header("Trail Drawing")]
@@ -30,7 +30,8 @@ public class PlayerBehavior : MonoBehaviour
 
     void Start()
     {
-        addTrailPoint((Vector2)transform.position);
+        _rb = GetComponent<Rigidbody2D>();
+        addTrailPoint(transform.position);
     }
     void Update()
     {
@@ -44,43 +45,25 @@ public class PlayerBehavior : MonoBehaviour
     void HandleMovement()
     {
         inputDirection = Vector2.zero;
-        
-        if ((Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed))
-        {
-            inputDirection.x = -1;
-        }
-        if ((Keyboard.current.rightArrowKey.isPressed || Keyboard.current.dKey.isPressed))
-        {
-            inputDirection.x = 1;
-        }
-        if ((Keyboard.current.upArrowKey.isPressed || Keyboard.current.wKey.isPressed))
-        {
-            inputDirection.y = 1;
-        }
-        if ((Keyboard.current.downArrowKey.isPressed || Keyboard.current.sKey.isPressed))
-        {
-            inputDirection.y = -1;
-        }
-    
-        inputDirection = inputDirection.normalized;
-        
-        bool isSliding = Keyboard.current.shiftKey.isPressed;
-    
-        float targetSpeed = isSliding ? slideSpeed : moveSpeed;
-        float currAcceleration = isSliding ? slideAcceleration : slideAcceleration;
-        
-        Vector2 targetVelocity = inputDirection * targetSpeed;
-        
-        if (inputDirection != Vector2.zero)
-        {
-            currVelocity = Vector2.MoveTowards(currVelocity, targetVelocity, acceleration * Time.deltaTime);
-        }
-        else
-        {
-            currVelocity = Vector2.MoveTowards(currVelocity, Vector2.zero, acceleration * Time.deltaTime);
-        }
 
-        transform.position += (Vector3)(currVelocity * Time.deltaTime);
+        if (Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed)
+            inputDirection.x = -1;
+        if (Keyboard.current.rightArrowKey.isPressed || Keyboard.current.dKey.isPressed)
+            inputDirection.x = 1;
+        if (Keyboard.current.upArrowKey.isPressed || Keyboard.current.wKey.isPressed)
+            inputDirection.y = 1;
+        if (Keyboard.current.downArrowKey.isPressed || Keyboard.current.sKey.isPressed)
+            inputDirection.y = -1;
+
+        inputDirection = inputDirection.normalized;
+
+        bool isSliding = Keyboard.current.shiftKey.isPressed;
+        float targetSpeed = isSliding ? slideSpeed : moveSpeed;
+        float currAcceleration = isSliding ? slideAcceleration : acceleration;
+
+        Vector2 targetVelocity = inputDirection * targetSpeed;
+        Vector2 newVelocity = Vector2.MoveTowards(_rb.linearVelocity, targetVelocity, currAcceleration * Time.deltaTime);
+        _rb.linearVelocity = newVelocity;
     }
     
     void HandleTrail()
@@ -143,5 +126,18 @@ public class PlayerBehavior : MonoBehaviour
         addTrailPoint((Vector2)transform.position);
     }
     
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        foreach (ContactPoint2D contact in collision.contacts)
+        {
+            Vector2 normal = contact.normal;
+            float intoWall = Vector2.Dot(_rb.linearVelocity, -normal);
+
+            if (intoWall > 0f)
+            {
+                _rb.linearVelocity += normal * intoWall;
+            }
+        }
+    }
     
 }
