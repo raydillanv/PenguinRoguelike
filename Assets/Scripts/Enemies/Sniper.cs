@@ -20,6 +20,7 @@ public class Sniper : AbstractEnemy
     
     void Start()
     {
+        base.Start();
         maxHealth = 15f;
         moveSpeed = 5f;
         contactDamage = 5f;
