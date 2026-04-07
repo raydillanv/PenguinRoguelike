@@ -135,7 +135,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -238,7 +238,6 @@ GameObject:
   m_Component:
   - component: {fileID: 496695397155226348}
   - component: {fileID: 9085867576676142050}
-  - component: {fileID: 2245134686005995230}
   - component: {fileID: 2531805472426353267}
   - component: {fileID: 2176936546735609955}
   - component: {fileID: 3330225722004241121}
@@ -326,27 +325,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &2245134686005995230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3560465976170433664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b3a87b2e632c4a4db04b5bf2acd0efa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerBehavior
-  moveSpeed: 2
-  acceleration: 3
-  slideSpeed: 3
-  slideAcceleration: 4
-  lineRenderer: {fileID: 0}
-  minPointDistance: 0.15
-  maxTrailPoints: 40
-  runeDetector: {fileID: 0}
-  detectionInterval: 0.25
 --- !u!114 &2531805472426353267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +344,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   minPointDistance: 0.15
   maxTrailPoints: 40
+  turnThreshold: 30
   runeDetector: {fileID: 0}
   detectionInterval: 0.25
 --- !u!70 &2176936546735609955

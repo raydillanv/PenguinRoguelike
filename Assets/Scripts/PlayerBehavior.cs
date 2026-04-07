@@ -4,140 +4,204 @@ using UnityEngine.InputSystem;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    private Rigidbody2D _rb;
-
-    [Header("Normal Movement")]
+    [Header("Movement")]
     public float moveSpeed = 5f;
-    public float acceleration = 10f;
+    public float collisionCheckDistance = 0.1f;
+    public string obstacleTag = "Obstacle";
 
-    [Header("Slide Movement")]
-    public float slideSpeed = 8f;
-    public float slideAcceleration = 5f;
+    private Vector2 _inputDirection;
+    private Vector2 _velocity;
+    private Vector2 _lastPosition;
+    private Collider2D _collider;
 
-    private Vector2 inputDirection;
-    
+    public Vector2 Velocity => _velocity;
+
     [Header("Trail Drawing")]
     public LineRenderer lineRenderer;
-    public float minPointDistance = 0.15f;
-    public int maxTrailPoints = 40;
+    public float minPointDistance = 0.1f;
+    public int maxTrailPoints = 50;
+
+    [Header("Turn Detection")]
+    public float turnThreshold = 30f;
 
     [Header("Rune Detection")]
     public RuneDetector runeDetector;
-    public float detectionInterval = 0.25f;
-    
-    private List<Vector2> currentTrailPoints = new List<Vector2>();
-    private float detectionTimer = 0f;
+    public float detectionInterval = 0.2f;
+
+    private List<Vector2> trailPoints = new List<Vector2>();
+    private List<TurnPoint> turnPoints = new List<TurnPoint>();
+
+    private Vector2 _lastTurnPosition;
+    private Vector2 _directionAtLastTurn;
+    private float _detectionTimer;
 
     void Start()
     {
-        _rb = GetComponent<Rigidbody2D>();
-        addTrailPoint(transform.position);
+        _collider = GetComponent<Collider2D>();
+        _lastPosition = transform.position;
+        _lastTurnPosition = transform.position;
     }
+
     void Update()
     {
-
         HandleMovement();
         HandleTrail();
         HandleRuneDetection();
-        
+
+        // Track velocity
+        Vector2 currentPos = transform.position;
+        _velocity = (currentPos - _lastPosition) / Time.deltaTime;
+        _lastPosition = currentPos;
     }
 
     void HandleMovement()
     {
-        inputDirection = Vector2.zero;
+        _inputDirection = Vector2.zero;
 
         if (Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed)
-            inputDirection.x = -1;
+            _inputDirection.x = -1;
         if (Keyboard.current.rightArrowKey.isPressed || Keyboard.current.dKey.isPressed)
-            inputDirection.x = 1;
+            _inputDirection.x = 1;
         if (Keyboard.current.upArrowKey.isPressed || Keyboard.current.wKey.isPressed)
-            inputDirection.y = 1;
+            _inputDirection.y = 1;
         if (Keyboard.current.downArrowKey.isPressed || Keyboard.current.sKey.isPressed)
-            inputDirection.y = -1;
+            _inputDirection.y = -1;
 
-        inputDirection = inputDirection.normalized;
+        if (_inputDirection == Vector2.zero)
+            return;
 
-        bool isSliding = Keyboard.current.shiftKey.isPressed;
-        float targetSpeed = isSliding ? slideSpeed : moveSpeed;
-        float currAcceleration = isSliding ? slideAcceleration : acceleration;
+        _inputDirection = _inputDirection.normalized;
+        Vector2 movement = _inputDirection * moveSpeed * Time.deltaTime;
 
-        Vector2 targetVelocity = inputDirection * targetSpeed;
-        Vector2 newVelocity = Vector2.MoveTowards(_rb.linearVelocity, targetVelocity, currAcceleration * Time.deltaTime);
-        _rb.linearVelocity = newVelocity;
+        // Check X movement
+        if (movement.x != 0 && !CanMove(new Vector2(movement.x, 0)))
+            movement.x = 0;
+
+        // Check Y movement
+        if (movement.y != 0 && !CanMove(new Vector2(0, movement.y)))
+            movement.y = 0;
+
+        transform.position += (Vector3)movement;
     }
-    
+
+    bool CanMove(Vector2 direction)
+    {
+        if (_collider == null)
+            return true;
+
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(
+            _collider.bounds.center,
+            _collider.bounds.size,
+            0f,
+            direction.normalized,
+            direction.magnitude + collisionCheckDistance
+        );
+
+        foreach (var hit in hits)
+        {
+            if (hit.collider != null && hit.collider != _collider && hit.collider.CompareTag(obstacleTag))
+                return false;
+        }
+
+        return true;
+    }
+
     void HandleTrail()
     {
         Vector2 currentPos = transform.position;
 
-        if (currentTrailPoints.Count == 0 || Vector2.Distance(currentTrailPoints[currentTrailPoints.Count - 1], currentPos) >= minPointDistance)
+        if (trailPoints.Count == 0)
         {
-            addTrailPoint(currentPos);
-        }
-    }
-
-    void addTrailPoint(Vector2 point)
-    {
-        currentTrailPoints.Add(point);
-
-        if (currentTrailPoints.Count > maxTrailPoints)
-        {
-            currentTrailPoints.RemoveAt(0);
+            trailPoints.Add(currentPos);
+            UpdateLineRenderer();
+            return;
         }
 
+        Vector2 lastPos = trailPoints[trailPoints.Count - 1];
+        if (Vector2.Distance(lastPos, currentPos) < minPointDistance)
+            return;
+
+        trailPoints.Add(currentPos);
+        if (trailPoints.Count > maxTrailPoints)
+            trailPoints.RemoveAt(0);
         UpdateLineRenderer();
+
+        // Calculate direction from last turn position to current
+        Vector2 currentDirection = (currentPos - _lastTurnPosition).normalized;
+
+        // Need enough distance from last turn to measure direction
+        if (Vector2.Distance(_lastTurnPosition, currentPos) < minPointDistance * 3)
+            return;
+
+        // First movement after a turn - just record direction
+        if (_directionAtLastTurn.sqrMagnitude < 0.001f)
+        {
+            _directionAtLastTurn = currentDirection;
+            return;
+        }
+
+        float turnAngle = Vector2.SignedAngle(_directionAtLastTurn, currentDirection);
+
+        if (Mathf.Abs(turnAngle) >= turnThreshold)
+        {
+            turnPoints.Add(new TurnPoint(currentPos, turnAngle));
+            Debug.Log($"Turn detected: {turnAngle:F1}° | Total turns: {turnPoints.Count}");
+
+            int maxTurns = runeDetector != null ? runeDetector.maxRuneSize + 2 : 10;
+            if (turnPoints.Count > maxTurns)
+                turnPoints.RemoveAt(0);
+
+            _lastTurnPosition = currentPos;
+            _directionAtLastTurn = Vector2.zero; // Reset to capture new direction
+        }
     }
 
     void UpdateLineRenderer()
     {
         if (lineRenderer == null) return;
 
-        lineRenderer.positionCount = currentTrailPoints.Count;
-
-        for (int i = 0; i < currentTrailPoints.Count; i++)
-        {
-            lineRenderer.SetPosition(i, currentTrailPoints[i]);
-        }
+        lineRenderer.positionCount = trailPoints.Count;
+        for (int i = 0; i < trailPoints.Count; i++)
+            lineRenderer.SetPosition(i, trailPoints[i]);
     }
 
     void HandleRuneDetection()
     {
-        if (runeDetector == null || currentTrailPoints.Count < 8)
+        if (runeDetector == null || turnPoints.Count < 2)
             return;
 
-        detectionTimer += Time.deltaTime;
+        _detectionTimer += Time.deltaTime;
 
-        if (detectionTimer >= detectionInterval)
+        if (_detectionTimer >= detectionInterval)
         {
-            detectionTimer = 0f;
+            _detectionTimer = 0f;
 
-            bool matched = runeDetector.tryDetectRune(currentTrailPoints);
+            var matchedRune = runeDetector.TryDetectRune(turnPoints);
 
-            if (matched)
-            {
+            if (matchedRune != null)
                 ClearTrail();
-            }
         }
     }
 
     void ClearTrail()
     {
-        currentTrailPoints.Clear();
-        addTrailPoint((Vector2)transform.position);
+        trailPoints.Clear();
+        turnPoints.Clear();
+        _lastTurnPosition = transform.position;
+        _directionAtLastTurn = Vector2.zero;
     }
-    
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        foreach (ContactPoint2D contact in collision.contacts)
-        {
-            Vector2 normal = contact.normal;
-            float intoWall = Vector2.Dot(_rb.linearVelocity, -normal);
 
-            if (intoWall > 0f)
-            {
-                _rb.linearVelocity += normal * intoWall;
-            }
-        }
+    private void OnDrawGizmos()
+    {
+        if (turnPoints == null || turnPoints.Count == 0)
+            return;
+
+        Gizmos.color = Color.yellow;
+        foreach (var tp in turnPoints)
+            Gizmos.DrawWireSphere(tp.position, 0.15f);
+
+        Gizmos.color = Color.cyan;
+        for (int i = 0; i < turnPoints.Count - 1; i++)
+            Gizmos.DrawLine(turnPoints[i].position, turnPoints[i + 1].position);
     }
-    
 }

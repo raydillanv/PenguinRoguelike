@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4028578165201383153}
   m_Layer: 0
   m_Name: Crystal Zombie
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,6 +132,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   ChaseSpeed: 1
   ReturnDistance: 1
+  Enemy: {fileID: 0}
   Flee: 0
 --- !u!50 &7209624072586795801
 Rigidbody2D:

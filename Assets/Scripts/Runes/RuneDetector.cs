@@ -5,52 +5,59 @@ public class RuneDetector : MonoBehaviour
 {
     public RuneLibrary runeLibrary;
     public SpellCaster spellCaster;
-    
+
     [Header("Recognition Settings")]
-    [Tooltip("Lower = stricter, Higher = more forgiving")]
-    public float matchThreshold = 0.30f;
-    
-    public bool tryDetectRune(List<Vector2> drawnPoints)
+    public float angleTolerance = 25f;
+    public int maxRuneSize = 6;
+
+    public RuneData TryDetectRune(List<TurnPoint> turnPoints)
     {
-        if (drawnPoints == null || drawnPoints.Count < 8)
+        if (turnPoints == null || turnPoints.Count < 2)
+            return null;
+
+        if (runeLibrary == null || runeLibrary.runes.Count == 0)
         {
-            return false;
+            Debug.LogWarning("RuneDetector: No rune library or empty library!");
+            return null;
         }
 
-        List<Vector2> normalizedInput = RuneMath.normalize(drawnPoints);
+        // DEBUG: Build input angles string for debug
+        string inputAngles = "";
+        foreach (var tp in turnPoints)
+            inputAngles += $"{tp.turnAngle:F0}° ";
+        Debug.Log($"Checking {turnPoints.Count} turns: [{inputAngles}]");
 
-        RuneData bestMatch = null;
-        float bestScore = float.MaxValue;
-
-        foreach (RuneData rune in runeLibrary.runes)
+        foreach (var rune in runeLibrary.runes)
         {
-            if (rune == null || rune.points == null || rune.points.Count == 0)
-                continue;
+            if (!rune || rune.turnAngles.Count == 0) continue;
 
-            float score = RuneMath.comparePointLists(normalizedInput, rune.points);
+            if (turnPoints.Count < rune.turnAngles.Count) continue;
 
-            Debug.Log($"Comparing to {rune.runeName}: score = {score}");
+            // Build template angles string for debug
+            string templateAngles = "";
+            foreach (var a in rune.turnAngles)
+                templateAngles += $"{a:F0}° ";
 
-            if (score < bestScore)
+            // Sliding window - check each window state
+            for (int start = 0; start <= turnPoints.Count - rune.turnAngles.Count; start++)
             {
-                bestScore = score;
-                bestMatch = rune;
+                var window = turnPoints.GetRange(start, rune.turnAngles.Count);
+
+                string windowAngles = "";
+                foreach (var tp in window)
+                    windowAngles += $"{tp.turnAngle:F0}° ";
+
+                Debug.Log($"Comparing window [{windowAngles}] vs {rune.runeName} [{templateAngles}]");
+
+                if (RuneMath.CompareAngles(window, rune, angleTolerance))
+                {
+                    Debug.Log($"<color=green>MATCHED rune: {rune.runeName}</color>");
+                    if (spellCaster) spellCaster.castRune(rune);
+                    return rune;
+                }
             }
         }
 
-        if (bestMatch != null && bestScore <= matchThreshold)
-        {
-            Debug.Log($"Matched rune: {bestMatch.runeName} (score: {bestScore})");
-
-            if (spellCaster != null)
-            {
-                spellCaster.castRune(bestMatch);
-            }
-
-            return true;
-        }
-
-        return false;
+        return null;
     }
-    
 }

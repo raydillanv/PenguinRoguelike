@@ -5,11 +5,8 @@ using UnityEngine;
 public class RuneData : ScriptableObject
 {
     public string runeName;
-    
-    [Tooltip("Normalized template of points.")]
-    public List<Vector2> points = new List<Vector2>();
-    
+    public List<float> turnAngles = new List<float>();
+
     [Header("Spell Info")]
     public GameObject spellPrefab;
-    
 }

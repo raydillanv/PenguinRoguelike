@@ -469,24 +469,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2531805472426353267, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330225722004241121, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3560465976170433664, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5981587103694041066, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5981587103694041066, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5981587103694041066, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2245134686005995230, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1176,7 +1171,7 @@ GameObject:
   - component: {fileID: 1795215231}
   m_Layer: 0
   m_Name: FINALhomebasebaby_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
