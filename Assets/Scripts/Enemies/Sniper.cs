@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class SniperProjectile : AbstractProjectile
 {
+    void Start()
+    {
+        owner = ProjectileOwnership.enemy;
+    }
     protected override void move()
     {
         transform.position += (Vector3)(direction * speed * Time.deltaTime);

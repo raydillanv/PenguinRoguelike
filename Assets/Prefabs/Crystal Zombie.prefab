@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4532206460107008125}
   - component: {fileID: 5996363938145268087}
   - component: {fileID: 6837637062624889423}
-  - component: {fileID: 3889450262632551017}
   - component: {fileID: 7209624072586795801}
   - component: {fileID: 4028578165201383153}
   m_Layer: 0
@@ -117,23 +116,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3889450262632551017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5673231636279122745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd8fc28b2c7742a09513ae5de79c7af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyBehavior
-  Player: {fileID: 0}
-  ChaseSpeed: 1
-  ReturnDistance: 1
-  Enemy: {fileID: 0}
-  Flee: 0
 --- !u!50 &7209624072586795801
 Rigidbody2D:
   serializedVersion: 5

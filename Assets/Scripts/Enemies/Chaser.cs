@@ -1,0 +1,38 @@
+using UnityEngine;
+
+public class Chaser : AbstractEnemy
+{
+    public bool flee;
+    public float returnDistance;
+    
+    void Start()
+    {
+        base.Start();
+        maxHealth = 30f;
+        moveSpeed = 7f;
+        contactDamage = 10f;
+    }
+    
+
+    protected override void move()
+    {
+        float distance = Vector2.Distance(transform.position, player.position);
+    
+        if(!flee) {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+        } else {
+            if(distance > returnDistance) flee = false;
+            transform.position = Vector2.MoveTowards(transform.position, player.position, -1 * moveSpeed * Time.deltaTime);
+        }
+    }
+
+    protected override void attack()
+    {
+    }
+
+
+    protected override void HandleCollision(Collider2D collision)
+    {
+        takeDamage(10f);
+    }
+}
