@@ -13,6 +13,7 @@ public abstract class AbstractProjectile : MonoBehaviour
     [SerializeField] protected float damage;
     [SerializeField] protected float lifetime;
     [SerializeField] protected ProjectileOwnership owner;
+    [SerializeField] protected GameObject projectile;
     
     protected Vector2 direction;
 
@@ -33,5 +34,5 @@ public abstract class AbstractProjectile : MonoBehaviour
     
     protected abstract void move();
     
-    
 }
+
