@@ -4550,7 +4550,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crystal Zombie
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3889450262632551017, guid: 9aaecd9c0c7cd4661a70a8d50b3fe604, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4672,7 +4673,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 414210400993596265, guid: 8f203c87c1748498aa7fdd3ff4d07cea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4790,7 +4792,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spooki Crystal Zombie
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8961651681322462400, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

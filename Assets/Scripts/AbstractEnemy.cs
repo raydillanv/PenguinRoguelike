@@ -9,6 +9,7 @@ public abstract class AbstractEnemy : MonoBehaviour
 
     protected float currentHealth;
     protected Transform player;
+    public GameObject fishLoot;
 
     protected virtual void Start()
     {
@@ -39,6 +40,10 @@ public abstract class AbstractEnemy : MonoBehaviour
     protected virtual void die()
     {
         Destroy(gameObject);
+        for (int i = 0; i < Random.Range(0, 3); i++)
+        {
+            Instantiate(fishLoot, transform.position, Quaternion.identity);
+        }
     }
     
     protected abstract void move();
