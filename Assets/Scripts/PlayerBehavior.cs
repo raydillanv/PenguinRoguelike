@@ -29,7 +29,7 @@ public class PlayerBehavior : MonoBehaviour
     public float detectionInterval = 0.2f;
 
     private List<Vector2> trailPoints = new List<Vector2>();
-    private List<TurnPoint> turnPoints = new List<TurnPoint>();
+    // private List<TurnPoint> turnPoints = new List<TurnPoint>();
 
     private Vector2 _lastTurnPosition;
     private Vector2 _directionAtLastTurn;
@@ -46,7 +46,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         HandleMovement();
         HandleTrail();
-        HandleRuneDetection();
+        // HandleRuneDetection();
 
         // Track velocity
         Vector2 currentPos = transform.position;
@@ -142,18 +142,18 @@ public class PlayerBehavior : MonoBehaviour
 
         float turnAngle = Vector2.SignedAngle(_directionAtLastTurn, currentDirection);
 
-        if (Mathf.Abs(turnAngle) >= turnThreshold)
-        {
-            turnPoints.Add(new TurnPoint(currentPos, turnAngle));
-            Debug.Log($"Turn detected: {turnAngle:F1}° | Total turns: {turnPoints.Count}");
-
-            int maxTurns = runeDetector != null ? runeDetector.maxRuneSize + 2 : 10;
-            if (turnPoints.Count > maxTurns)
-                turnPoints.RemoveAt(0);
-
-            _lastTurnPosition = currentPos;
-            _directionAtLastTurn = Vector2.zero; // Reset to capture new direction
-        }
+        // if (Mathf.Abs(turnAngle) >= turnThreshold)
+        // {
+        //     turnPoints.Add(new TurnPoint(currentPos, turnAngle));
+        //     Debug.Log($"Turn detected: {turnAngle:F1}° | Total turns: {turnPoints.Count}");
+        //
+        //     int maxTurns = runeDetector != null ? runeDetector.maxRuneSize + 2 : 10;
+        //     if (turnPoints.Count > maxTurns)
+        //         turnPoints.RemoveAt(0);
+        //
+        //     _lastTurnPosition = currentPos;
+        //     _directionAtLastTurn = Vector2.zero; // Reset to capture new direction
+        // }
     }
 
     void UpdateLineRenderer()
@@ -165,43 +165,43 @@ public class PlayerBehavior : MonoBehaviour
             lineRenderer.SetPosition(i, trailPoints[i]);
     }
 
-    void HandleRuneDetection()
-    {
-        if (runeDetector == null || turnPoints.Count < 2)
-            return;
-
-        _detectionTimer += Time.deltaTime;
-
-        if (_detectionTimer >= detectionInterval)
-        {
-            _detectionTimer = 0f;
-
-            var matchedRune = runeDetector.TryDetectRune(turnPoints);
-
-            if (matchedRune != null)
-                ClearTrail();
-        }
-    }
-
-    void ClearTrail()
-    {
-        trailPoints.Clear();
-        turnPoints.Clear();
-        _lastTurnPosition = transform.position;
-        _directionAtLastTurn = Vector2.zero;
-    }
-
-    private void OnDrawGizmos()
-    {
-        if (turnPoints == null || turnPoints.Count == 0)
-            return;
-
-        Gizmos.color = Color.yellow;
-        foreach (var tp in turnPoints)
-            Gizmos.DrawWireSphere(tp.position, 0.15f);
-
-        Gizmos.color = Color.cyan;
-        for (int i = 0; i < turnPoints.Count - 1; i++)
-            Gizmos.DrawLine(turnPoints[i].position, turnPoints[i + 1].position);
-    }
+    // void HandleRuneDetection()
+    // {
+    //     if (runeDetector == null || turnPoints.Count < 2)
+    //         return;
+    //
+    //     _detectionTimer += Time.deltaTime;
+    //
+    //     if (_detectionTimer >= detectionInterval)
+    //     {
+    //         _detectionTimer = 0f;
+    //
+    //         var matchedRune = runeDetector.TryDetectRune(turnPoints);
+    //
+    //         if (matchedRune != null)
+    //             ClearTrail();
+    //     }
+    // }
+    //
+    // void ClearTrail()
+    // {
+    //     trailPoints.Clear();
+    //     turnPoints.Clear();
+    //     _lastTurnPosition = transform.position;
+    //     _directionAtLastTurn = Vector2.zero;
+    // }
+    //
+    // private void OnDrawGizmos()
+    // {
+    //     if (turnPoints == null || turnPoints.Count == 0)
+    //         return;
+    //
+    //     Gizmos.color = Color.yellow;
+    //     foreach (var tp in turnPoints)
+    //         Gizmos.DrawWireSphere(tp.position, 0.15f);
+    //
+    //     Gizmos.color = Color.cyan;
+    //     for (int i = 0; i < turnPoints.Count - 1; i++)
+    //         Gizmos.DrawLine(turnPoints[i].position, turnPoints[i + 1].position);
+    // }
 }

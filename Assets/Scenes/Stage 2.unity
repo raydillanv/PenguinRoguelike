@@ -164,6 +164,34 @@ Transform:
   - {fileID: 2051484926}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &229609811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
+  m_PrefabInstance: {fileID: 960701157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &242509673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4173605675468509013, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
+  m_PrefabInstance: {fileID: 4569570674227857526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &242509674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242509673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db6a7b71db40cf943a59bb8184bfe625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chaser
+  maxHealth: 0
+  moveSpeed: 0
+  contactDamage: 0
+  fishLoot: {fileID: 229609811}
+  flee: 0
+  returnDistance: 0
 --- !u!20 &519420031 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 5981587103694041066, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
@@ -299,6 +327,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 496695397155226348, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176936546735609955, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+      propertyPath: m_Size.x
+      value: 0.36795616
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176936546735609955, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+      propertyPath: m_Size.y
+      value: 0.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176936546735609955, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0060219765
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176936546735609955, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3560465976170433664, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
@@ -4796,7 +4840,10 @@ PrefabInstance:
     - {fileID: 8961651681322462400, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4173605675468509013, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 242509674}
   m_SourcePrefab: {fileID: 100100000, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
 --- !u!1001 &5787167695480625265
 PrefabInstance:
