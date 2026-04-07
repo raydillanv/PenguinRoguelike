@@ -458,6 +458,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1337153538 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 496695397155226348, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+  m_PrefabInstance: {fileID: 902104963}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1488775577
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +554,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1957371552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1409918366745601179, guid: 8f203c87c1748498aa7fdd3ff4d07cea, type: 3}
+  m_PrefabInstance: {fileID: 2861722868234419489}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2051484925
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +4620,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 414210400993596265, guid: 8f203c87c1748498aa7fdd3ff4d07cea, type: 3}
+      propertyPath: Enemy
+      value: 
+      objectReference: {fileID: 1957371552}
+    - target: {fileID: 414210400993596265, guid: 8f203c87c1748498aa7fdd3ff4d07cea, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1337153538}
     - target: {fileID: 1409918366745601179, guid: 8f203c87c1748498aa7fdd3ff4d07cea, type: 3}
       propertyPath: m_Name
       value: Pink Whisp
