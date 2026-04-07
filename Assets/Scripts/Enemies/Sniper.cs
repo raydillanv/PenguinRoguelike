@@ -4,6 +4,7 @@ public class SniperProjectile : AbstractProjectile
 {
     void Start()
     {
+        base.Start();
         owner = ProjectileOwnership.enemy;
     }
     protected override void move()
@@ -26,7 +27,7 @@ public class Sniper : AbstractEnemy
     {
         base.Start();
         maxHealth = 15f;
-        moveSpeed = 5f;
+        moveSpeed = 2f;
         contactDamage = 5f;
         Vector2 offset = transform.position - player.transform.position;
         angle = Mathf.Atan2(offset.y, offset.x);
@@ -57,7 +58,7 @@ public class Sniper : AbstractEnemy
         //projectileScript.setDirection(shootDir);
     }
 
-    protected override void HandleCollision(Collider2D collision)
+    protected override void HandleCollision(Collision2D collision)
     {
         throw new System.NotImplementedException();
     }
