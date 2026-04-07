@@ -5,7 +5,12 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int currency;
     public int kills;
-
+    public int Stars = 0;
+    
+    private bool _Stage1Done = false;
+    private bool _Stage2Done = false;
+    private bool _Stage3Done = false;
+    private bool _Stage4Done = false;
 
     private void Awake()
     {
