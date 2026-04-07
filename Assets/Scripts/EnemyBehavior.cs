@@ -14,7 +14,7 @@ public class EnemyBehavior : MonoBehaviour
 
     void Start()
     {
-        
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
