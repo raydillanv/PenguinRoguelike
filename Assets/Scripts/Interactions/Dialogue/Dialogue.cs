@@ -10,6 +10,8 @@ public class Dialogue : MonoBehaviour
 
     public bool GiveRandomText = false;
 
+    private bool _isActive = false;
+
     public List<TextAsset> RandomTexts = new List<TextAsset>();
 
 
@@ -18,23 +20,31 @@ public class Dialogue : MonoBehaviour
     {
         _dialogueController = GameObject.FindGameObjectWithTag("DialogueController").GetComponent<DialogueController>();
         _textReaderRef = GameObject.FindGameObjectWithTag("DialogueController").GetComponent<TextReader>();
-        _textReaderRef.LoadText(textFileToParse);
+        //_textReaderRef.LoadText(textFileToParse);
         if (GiveRandomText)
         {
-            _textReaderRef.LoadText(GetRandomText());
+            //_textReaderRef.LoadText(GetRandomText());
         }
     }
 
     public void HandleDialogue()
     {
-        
+        if (!_isActive)
+        {
+            _isActive = true;
+            if (GiveRandomText)
+                _textReaderRef.LoadText(GetRandomText());
+            else
+                _textReaderRef.LoadText(textFileToParse);
+        }
         _dialogueController.OpenPanel();
         _textReaderRef.PassText();
 
 
         if (_textReaderRef.NoMoreLines)
         {
-            
+            _isActive = false;
+
             _dialogueController.ClosePanel();
 
             if (GiveRandomText && Repeatable)
