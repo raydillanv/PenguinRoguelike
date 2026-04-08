@@ -36,7 +36,7 @@ public class Chaser : AbstractEnemy
     {
         if (collision.collider.gameObject.tag == "Player")
         {
-            takeDamage(10f);
+            TakeDamage(10f);
         }
         
         

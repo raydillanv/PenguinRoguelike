@@ -53,7 +53,7 @@ public class Sniper : AbstractEnemy
         projectileScript.setDirection(shootDir);
     }
 
-    protected override void HandleCollision(Collider2D collision)
+    protected override void HandleCollision(Collision2D collision)
     {
         throw new System.NotImplementedException();
     }
