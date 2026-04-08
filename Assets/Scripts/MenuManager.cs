@@ -14,14 +14,9 @@ public class MenuManager : MonoBehaviour
         
     }
 
-    void playButton()
+    public void playButton()
     {
         SceneManager.LoadScene("Home");
-    }
-
-    void settings()
-    {
-        
     }
 
     void restartLvl()
