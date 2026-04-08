@@ -2,14 +2,9 @@ using UnityEngine;
 
 public class SniperProjectile : AbstractProjectile
 {
-    void Start()
-    {
-        base.Start();
-        owner = ProjectileOwnership.enemy;
-    }
     protected override void move()
     {
-        transform.position += (Vector3)(direction * speed * Time.deltaTime);
+        transform.position += (Vector3)(direction * (speed * Time.deltaTime));
     }
 }
 
@@ -21,16 +16,18 @@ public class Sniper : AbstractEnemy
 
     private float angle;
     private GameObject projectile;
-    private GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+    private PlayerBehavior _playerScript;
     
-    void Start()
+    new void Start()
     {
         base.Start();
         maxHealth = 15f;
-        moveSpeed = 2f;
+        moveSpeed = 5f;
         contactDamage = 5f;
         Vector2 offset = transform.position - player.transform.position;
         angle = Mathf.Atan2(offset.y, offset.x);
+        
+        _playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
     }
     
 
@@ -47,18 +44,16 @@ public class Sniper : AbstractEnemy
 
     protected override void attack()
     {
-        //Vector2 playerVel = playerObject.Velocity;
-        //Vector2 predictShot = (Vector2)player.transform.position + (playerVel * .25f);
+        Vector2 predictShot = (Vector2)player.transform.position + (_playerScript.Velocity * .25f);
         
-        //Vector2 shootDir = predictShot - (Vector2) transform.position;
+        Vector2 shootDir = predictShot - (Vector2) transform.position;
         
         GameObject proj = Instantiate(projectile, transform.position, Quaternion.identity);
-
-        AbstractProjectile projectileScript = proj.GetComponent<AbstractProjectile>();
-        //projectileScript.setDirection(shootDir);
+        AbstractProjectile projectileScript = proj.GetComponent<SniperProjectile>();
+        projectileScript.setDirection(shootDir);
     }
 
-    protected override void HandleCollision(Collision2D collision)
+    protected override void HandleCollision(Collider2D collision)
     {
         throw new System.NotImplementedException();
     }

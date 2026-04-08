@@ -28,7 +28,7 @@ public abstract class AbstractEnemy : MonoBehaviour
         attack();
     }
 
-    protected virtual void takeDamage(float damage)
+    public virtual void TakeDamage(float damage)
     {
         currentHealth -= damage;
         if (currentHealth <= 0)

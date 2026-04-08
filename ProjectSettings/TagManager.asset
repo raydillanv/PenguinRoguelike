@@ -7,6 +7,7 @@ TagManager:
   - GameManager
   - DialogueController
   - Obstacle
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -56,11 +57,12 @@ TagManager:
   - name: Player
     uniqueID: 900863371
     locked: 0
-  - name: ROPE!!!!!
-    uniqueID: 3158824869
-    locked: 0
   - name: UI
     uniqueID: 2481643125
     locked: 0
+  - name: ROPE!!!!!
+    uniqueID: 3158824869
+    locked: 0
   m_RenderingLayers:
   - Default
+  m_MigratedRenderPipelines: []
