@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1813324171
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8124480408282556834, guid: b103c24f0b914494892d286e763ba0c3, type: 3}
@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 2176936546735609955}
   - component: {fileID: 3330225722004241121}
   - component: {fileID: 2730821605331936325}
+  - component: {fileID: 6142249522509471283}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -337,15 +338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b3a87b2e632c4a4db04b5bf2acd0efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBehavior
-  moveSpeed: 4
-  collisionCheckDistance: 0.1
-  obstacleTag: Obstacle
-  lineRenderer: {fileID: 0}
-  minPointDistance: 0.15
-  maxTrailPoints: 40
-  turnThreshold: 30
-  runeDetector: {fileID: 0}
-  detectionInterval: 0.25
+  moveSpeed: 10
+  runeSystem: {fileID: 0}
+  drawPath: 0
 --- !u!70 &2176936546735609955
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -436,7 +431,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2531805472426353267}
+        m_TargetAssemblyTypeName: PlayerBehavior, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
@@ -528,6 +535,18 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6142249522509471283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3560465976170433664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27167ea91af93d140b1804417b08019a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellCaster
 --- !u!1 &4634685747056104665
 GameObject:
   m_ObjectHideFlags: 0
