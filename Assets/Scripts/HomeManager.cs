@@ -21,6 +21,7 @@ public class HomeManager : MonoBehaviour
 
     public GameObject BossDoorNotReady;
     public GameObject BossDoorReady;
+    public GameObject BossDoorAnimation;
     
     // A script that sets the home scene up on start based on the bools inside the game manager.
     
@@ -62,6 +63,7 @@ public class HomeManager : MonoBehaviour
         {
             BossDoorNotReady.SetActive(false);
             BossDoorReady.SetActive(true);
+            BossDoorAnimation.SetActive(true);
         }
     }
 
