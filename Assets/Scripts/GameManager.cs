@@ -7,10 +7,10 @@ public class GameManager : MonoBehaviour
     public int kills;
     public int Stars = 0;
     
-    private bool _Stage1Done = false;
-    private bool _Stage2Done = false;
-    private bool _Stage3Done = false;
-    private bool _Stage4Done = false;
+    public bool stage1Done = false;
+    public bool stage2Done = false;
+    public bool stage3Done = false;
+    public bool stage4Done = false;
 
     private void Awake()
     {
@@ -35,19 +35,19 @@ public class GameManager : MonoBehaviour
     {
         if (stage == "Stage 1")
         {
-            _Stage1Done = true;
+            stage1Done = true;
         }
         else if (stage == "Stage 2")
         {
-            _Stage2Done = true;
+            stage2Done = true;
         }
         else if (stage == "Stage 3")
         {
-            _Stage3Done = true;
+            stage3Done = true;
         }
         else if (stage == "Stage 4")
         {
-            _Stage4Done = true;
+            stage4Done = true;
         }
     }
 
