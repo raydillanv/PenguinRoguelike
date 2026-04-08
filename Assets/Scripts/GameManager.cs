@@ -71,6 +71,11 @@ public class GameManager : MonoBehaviour
         currency -= amount;
     }
 
+    public void AddStar()
+    {
+        Stars += 1;
+    }
+
     public void AddKillCount(int amount)
     {
         kills += amount;

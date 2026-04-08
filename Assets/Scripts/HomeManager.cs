@@ -14,6 +14,11 @@ public class HomeManager : MonoBehaviour
     public GameObject Stage3NPCs;
     public GameObject Stage4NPCs;
 
+    public GameObject Stage1Star;
+    public GameObject Stage2Star;
+    public GameObject Stage3Star;
+    public GameObject Stage4Star;
+
     public GameObject BossDoorNotReady;
     public GameObject BossDoorReady;
     
@@ -26,6 +31,7 @@ public class HomeManager : MonoBehaviour
         _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         SetDoors();
         SetNPCs();
+        SetStars();
         print(0);
     }
 
@@ -51,6 +57,12 @@ public class HomeManager : MonoBehaviour
         {
             Stage4Door.SetActive(false);
         }
+
+        if (_gameManager.Stars == 4)
+        {
+            BossDoorNotReady.SetActive(false);
+            BossDoorReady.SetActive(true);
+        }
     }
 
     private void SetNPCs()
@@ -73,6 +85,29 @@ public class HomeManager : MonoBehaviour
         if (_gameManager.stage4Done == true)
         {
             Stage4NPCs.SetActive(true);
+        }
+    }
+
+    private void SetStars()
+    {
+        if (_gameManager.stage1Done == true)
+        {
+            Stage1Star.SetActive(true);
+        }
+
+        if (_gameManager.stage2Done == true)
+        {
+            Stage2Star.SetActive(true);
+        }
+
+        if (_gameManager.stage3Done == true)
+        {
+            Stage3Star.SetActive(true);
+        }
+
+        if (_gameManager.stage4Done == true)
+        {
+            Stage4Star.SetActive(true);
         }
     }
     

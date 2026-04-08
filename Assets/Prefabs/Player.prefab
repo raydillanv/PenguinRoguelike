@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1813324171
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8124480408282556834, guid: b103c24f0b914494892d286e763ba0c3, type: 3}
@@ -337,10 +337,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b3a87b2e632c4a4db04b5bf2acd0efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBehavior
-  moveSpeed: 2
-  acceleration: 3
-  slideSpeed: 3
-  slideAcceleration: 4
+  moveSpeed: 4
+  collisionCheckDistance: 0.1
+  obstacleTag: Obstacle
   lineRenderer: {fileID: 0}
   minPointDistance: 0.15
   maxTrailPoints: 40
