@@ -1774,6 +1774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a77d7b977396f4fbca3202a6f7cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::openShop
+  _shop: {fileID: 1382429849}
 --- !u!4 &1117145106
 Transform:
   m_ObjectHideFlags: 0
@@ -4500,10 +4501,10 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3308748962534416350, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
       insertIndex: 0
-      addedObject: {fileID: 7053229241214199130}
-    - targetCorrespondingSourceObject: {fileID: 3308748962534416350, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1382429850}
+    - targetCorrespondingSourceObject: {fileID: 3308748962534416350, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 7053229241214199130}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
 --- !u!224 &4397111906110333929 stripped

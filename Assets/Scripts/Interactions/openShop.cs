@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class openShop : MonoBehaviour
+public class openShop : MonoBehaviour, IInteractable
 {
     private Transform _player;
-    private GameObject _shop; 
+    public GameObject _shop; 
 
     public bool CanInteract()
     {
@@ -24,6 +24,6 @@ public class openShop : MonoBehaviour
     void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player").transform;
-        _shop = GameObject.FindGameObjectWithTag("Shop");
+        //_shop = GameObject.FindGameObjectWithTag("Shop");
     }
 }
