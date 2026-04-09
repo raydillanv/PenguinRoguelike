@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - RuneSystem
   - pause
+  - Shop
   layers:
   - Default
   - TransparentFX
