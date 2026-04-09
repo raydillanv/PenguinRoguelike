@@ -19,6 +19,13 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Home");
     }
 
+    public void quit()
+    {
+        SceneManager.LoadScene("Start Menu");
+    }
+    
+    
+    
     void restartLvl()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
