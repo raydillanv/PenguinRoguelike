@@ -8,6 +8,7 @@ TagManager:
   - DialogueController
   - Obstacle
   - RuneSystem
+  - pause
   layers:
   - Default
   - TransparentFX
