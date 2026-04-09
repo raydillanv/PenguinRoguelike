@@ -28,22 +28,18 @@ public class MenuManager : MonoBehaviour
     public void playButton()
     {
         SceneManager.LoadScene("Home");
+        resume();
     }
 
     public void quit()
     {
         SceneManager.LoadScene("Start Menu");
+        resume();
     }
-
-    public void home()
-    {
-        SceneManager.LoadScene("Home");
-    }
-    
-    
     
     public void restartLvl()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        resume();
     }
 }
