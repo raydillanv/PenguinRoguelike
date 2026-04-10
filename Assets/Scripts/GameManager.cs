@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
     public int currency;
     public int kills;
     public int Stars = 0;
+    public int maxHealth = 100;
+    public int health = 100;
     
     public bool stage1Done = false;
     public bool stage2Done = false;
@@ -79,6 +81,17 @@ public class GameManager : MonoBehaviour
     public void AddKillCount(int amount)
     {
         kills += amount;
+    }
+
+    public void SetMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        health = maxHealth;
+    }
+
+    public void ResetHealth()
+    {
+        health = maxHealth;
     }
 
     // listeners for events

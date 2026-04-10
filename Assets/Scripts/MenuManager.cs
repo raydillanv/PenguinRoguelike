@@ -1,16 +1,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using System.Collections;
 public class MenuManager : MonoBehaviour
 {
-    private GameObject pauseMenu;
+    public GameObject pauseMenu;
 
     private bool isPaused;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Cursor.visible = false;
         isPaused = false;
-        pauseMenu = GameObject.FindGameObjectWithTag("pause");
     }
 
     // Update is called once per frame
@@ -18,7 +19,18 @@ public class MenuManager : MonoBehaviour
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            pause();
+            if (!isPaused)
+            {
+                pause();
+                isPaused = true;
+                Cursor.visible = true;
+            }
+            else
+            {
+                resume();
+                isPaused = false;
+                Cursor.visible = false;
+            }
         }
     }
 
@@ -29,6 +41,7 @@ public class MenuManager : MonoBehaviour
     }
     public void resume()
     {
+        pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
     
@@ -36,18 +49,21 @@ public class MenuManager : MonoBehaviour
     public void playButton()
     {
         SceneManager.LoadScene("Home");
-        resume();
+        Time.timeScale = 1;
+        Cursor.visible = false;
     }
 
     public void quit()
     {
         SceneManager.LoadScene("Start Menu");
-        resume();
+        Time.timeScale = 1;
+        Cursor.visible = true;
     }
     
     public void restartLvl()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        resume();
+        Time.timeScale = 1;
+        Cursor.visible = false;
     }
 }
