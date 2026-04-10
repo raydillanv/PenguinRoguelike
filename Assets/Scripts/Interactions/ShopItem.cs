@@ -10,11 +10,11 @@ public class ShopButton : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //if ((upgradeID == 0 && ItemPersistence.instance.upgradeBought1)
-        //|| (upgradeID == 1 && ItemPersistence.instance.upgradeBought2) || 
-        //(upgradeID == 2 && ItemPersistence.instance.upgradeBought3) || 
-        //(upgradeID == 3 && ItemPersistence.instance.upgradeBought4))
-        //gameObject.SetActive(false);
+        if ((upgradeID == 0 && PurchaseSingleton.instance.upgradeBought1)
+        || (upgradeID == 1 && PurchaseSingleton.instance.upgradeBought2) || 
+        (upgradeID == 2 && PurchaseSingleton.instance.upgradeBought3) || 
+        (upgradeID == 3 && PurchaseSingleton.instance.upgradeBought4))
+        gameObject.SetActive(false);
         
         /**
          * if another set of items is added to list, use this:
