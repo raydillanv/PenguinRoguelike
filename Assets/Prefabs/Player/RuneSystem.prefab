@@ -51,4 +51,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c4eb32d033d9846898b0e34ded6ce257, type: 2}
   - {fileID: 11400000, guid: a2c0afa011d68400a911bafbe9936db6, type: 2}
   matchThreshold: 0.85
-  debug: 1
+  debug: 0
