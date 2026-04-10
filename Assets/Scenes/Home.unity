@@ -2570,7 +2570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5036039737862106673, guid: 58f4f49bb359bca4185e8ae8dd4da301, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5198856866808965184, guid: 58f4f49bb359bca4185e8ae8dd4da301, type: 3}
       propertyPath: m_Camera
@@ -2782,6 +2782,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3969695062089241837, guid: 866d8d3397fc24e41afca4abf015deee, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969695062089241837, guid: 866d8d3397fc24e41afca4abf015deee, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5382493159297910417, guid: 866d8d3397fc24e41afca4abf015deee, type: 3}
       propertyPath: m_Name
       value: HomeArea
@@ -2838,6 +2846,14 @@ PrefabInstance:
       propertyPath: IntroScene
       value: 
       objectReference: {fileID: 7097441225808568789}
+    - target: {fileID: 9186588166927101509, guid: 866d8d3397fc24e41afca4abf015deee, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186588166927101509, guid: 866d8d3397fc24e41afca4abf015deee, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2989,7 +3005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4036330373725263330, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21599.998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4036330373725263330, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3087,9 +3103,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.53154
       objectReference: {fileID: 0}
+    - target: {fileID: 5616671586299427029, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6800880419530828006, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329596902386004645, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8507399541323572581, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
