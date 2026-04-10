@@ -6,13 +6,11 @@ public class HomingBall : Spell
 {
     public float speed = 8f;
     public float turnSpeed = 5f;
-    public float lifetime = 5f;
-    public float damage = 10f;
     public float maxRange = 15f;
 
     private Transform target;
 
-    public override void Cast(SpellCaster caster)
+    public override void OnCast(SpellCaster caster)
     {
         var instance = Instantiate(gameObject, caster.player.position, Quaternion.identity);
         var spell = instance.GetComponent<HomingBall>();

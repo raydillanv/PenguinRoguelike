@@ -59,11 +59,11 @@ namespace Enemies
 
             if (distance > 8f)
             {
-                transform.position = Vector2.MoveTowards(
+                rb.MovePosition(Vector2.MoveTowards(
                     transform.position,
                     player.position,
                     moveSpeed * Time.deltaTime
-                );
+                ));
             }
         }
 

@@ -35,7 +35,7 @@ namespace Enemies
             float y = player.transform.position.y + Mathf.Sin(angle) * orbit;
             Vector2 target = new Vector2(x, y);
        
-            transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+            rb.MovePosition(Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime));
         
         }
 

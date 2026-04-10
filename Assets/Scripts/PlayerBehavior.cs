@@ -47,4 +47,14 @@ public class PlayerBehavior : MonoBehaviour
         runeSystem.NextDirection(direction);
         _lastInputDirection = direction;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        _rb.linearVelocity = Vector2.zero;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        _rb.linearVelocity = Vector2.zero;
+    }
 }

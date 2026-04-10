@@ -34,5 +34,6 @@ public class SpellCaster : MonoBehaviour
     public void OnSpellFailed()
     {
         // TODO: not enough mana feedback
+        Debug.Log("Spell failed, not enough mana!");
     }
 }
