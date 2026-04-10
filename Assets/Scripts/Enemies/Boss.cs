@@ -8,8 +8,7 @@ namespace Enemies
     {
         
         public GameObject[] enemyPrefabs;
-        public GameObject projectilePrefab;
-
+        
         public int projectileCount = 20;
         public int spawnCount = 6;
         public float spawnCooldown;
@@ -24,7 +23,7 @@ namespace Enemies
             base.Start();
 
             maxHealth = 500f;
-            moveSpeed = 2f;
+            moveSpeed = 1f;
             contactDamage = 15f;
         
             attackCooldown = 3f;
@@ -37,9 +36,6 @@ namespace Enemies
 
         protected override void FixedUpdate()
         {
-            attackTimer -= Time.deltaTime;
-            spawnTimer -= Time.deltaTime;
-
             if (attackTimer <= 0f)
             {
                 attack();
@@ -51,6 +47,9 @@ namespace Enemies
                 SpawnEnemiesCircle();
                 spawnTimer = spawnCooldown;
             }
+            
+            attackTimer -= Time.deltaTime;
+            spawnTimer -= Time.deltaTime;
         }
 
         protected override void move()
@@ -83,7 +82,7 @@ namespace Enemies
 
                 Vector2 dir = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
 
-                GameObject proj = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+                AbstractProjectile proj = Instantiate(projectile, transform.position, Quaternion.identity);
                 AbstractProjectile projScript = proj.GetComponent<AbstractProjectile>();
                 projScript.setDirection(dir);
             }

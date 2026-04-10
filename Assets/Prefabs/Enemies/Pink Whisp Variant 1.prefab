@@ -78,8 +78,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74683028953254d4894955b712f460d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShotgunProjectile
-  speed: 0
-  damage: 0
-  lifetime: 0
-  owner: 0
-  projectile: {fileID: 0}
+  maxHealth: 0
+  moveSpeed: 0
+  contactDamage: 0
+  attackCooldown: 0
+  currentCooldown: 0
+  fishLoot: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
+  projectile: {fileID: 5870086094815154355, guid: f5250cbe0e5575f42a605ba337e915ab, type: 3}
+  spreadAngle: 20

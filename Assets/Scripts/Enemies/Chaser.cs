@@ -21,7 +21,7 @@ namespace Enemies
 
         protected override void attack()
         {
-            // TODO: Implement? 
+            // TODO: Implement? nah cause they just do contact damage so they dont need to shoot anything
         }
     }
 }

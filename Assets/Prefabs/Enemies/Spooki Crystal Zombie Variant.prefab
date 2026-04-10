@@ -81,4 +81,7 @@ MonoBehaviour:
   maxHealth: 0
   moveSpeed: 0
   contactDamage: 0
-  fishLoot: {fileID: 0}
+  attackCooldown: 0
+  currentCooldown: 0
+  fishLoot: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
+  projectile: {fileID: 5561069558656142379, guid: 4494b9965b3b9244abcb2b4c352ae6c2, type: 3}
