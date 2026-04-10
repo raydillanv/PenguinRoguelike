@@ -1,12 +1,7 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Scripts/Enemies.meta
 guid: 76ab7b219b8a3427d8470239425e9630
 folderAsset: yes
 DefaultImporter:
-========
-guid: 48af36459d6ac4f6486ed0b854b3b258
-NativeFormatImporter:
->>>>>>>> 7f6b3b8 (Working update, Player changes and changing rune system):Assets/Runes/Square.asset.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

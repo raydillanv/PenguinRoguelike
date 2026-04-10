@@ -1,3 +1,4 @@
+using Enemies.Projectiles;
 using UnityEngine;
 
 namespace Enemies
@@ -8,22 +9,35 @@ namespace Enemies
         [SerializeField] protected float maxHealth;
         [SerializeField] protected float moveSpeed;
         [SerializeField] protected float contactDamage;
+        [SerializeField] protected float attackCooldown;
+        [SerializeField] protected float currentCooldown;
 
         protected float currentHealth;
         protected Transform player;
         public GameObject fishLoot;
         [SerializeField] protected AbstractProjectile projectile;
-
+    
         protected virtual void Start()
         {
             currentHealth = maxHealth;
-            player = GameObject.FindWithTag("Player")?.transform;
+            GameObject playerObject = GameObject.FindWithTag("Player");
+            if (playerObject != null)
+            {
+                player = playerObject.transform;
+            }
+        
         }
 
         protected virtual void Update()
         {
             move();
-            attack();
+            if (currentCooldown <= 0)
+            {
+                attack();
+                currentCooldown = attackCooldown;
+            }
+            currentCooldown -= Time.deltaTime;
+        
         }
 
         public virtual void TakeDamage(float damage)
@@ -42,6 +56,8 @@ namespace Enemies
             {
                 Instantiate(fishLoot, transform.position, Quaternion.identity);
             }
+        
+            GameManager.instance.AddKillCount(1);
         }
     
         protected abstract void move();
@@ -52,12 +68,13 @@ namespace Enemies
             return contactDamage;
         }
 
+        // If you want to change how collisions interact call override on OnCollisionEnter2D(Collision2D collision) in child
         protected virtual void OnCollisionEnter2D(Collision2D collision)
         {
-            HandleCollision(collision);
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.gameObject.GetComponent<PlayerBehavior>().takeDamage(contactDamage);
+            }
         }
-    
-        protected abstract void HandleCollision(Collision2D collision);
-
     }
 }

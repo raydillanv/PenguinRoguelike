@@ -1,42 +1,37 @@
 using UnityEngine;
 
-public class Chaser : AbstractEnemy
+namespace Enemies
 {
-    public bool flee;
-    public float returnDistance;
-    
-    void Start()
+    public class Chaser : AbstractEnemy
     {
-        base.Start();
-        
-        maxHealth = 30f;
-        moveSpeed = 5f;
-        contactDamage = 10f;
-    }
-    
+        public bool flee;
+        public float returnDistance;
 
-    protected override void move()
-    {
-        float distance = Vector2.Distance(transform.position, player.position);
-    
-        if(!flee) {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
-        } else {
-            if(distance > returnDistance) flee = false;
-            transform.position = Vector2.MoveTowards(transform.position, player.position, -1 * moveSpeed * Time.deltaTime);
-        }
-    }
-
-    protected override void attack()
-    {
-    }
-
-
-    protected override void HandleCollision(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
+        protected override void Start()
         {
-            collision.gameObject.GetComponent<PlayerBehavior>().takeDamage(contactDamage);
+            base.Start();
+        
+            maxHealth = 30f;
+            moveSpeed = 5f;
+            contactDamage = 10f;
+        }
+    
+
+        protected override void move()
+        {
+            float distance = Vector2.Distance(transform.position, player.position);
+    
+            if(!flee) {
+                transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+            } else {
+                if(distance > returnDistance) flee = false;
+                transform.position = Vector2.MoveTowards(transform.position, player.position, -1 * moveSpeed * Time.deltaTime);
+            }
+        }
+
+        protected override void attack()
+        {
+            // TODO: Implement? 
         }
     }
 }
