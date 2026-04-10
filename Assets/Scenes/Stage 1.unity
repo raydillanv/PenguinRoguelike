@@ -3476,28 +3476,21 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - serializedVersion: 2
-    m_RefCount: 1
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a2e7e4f1409a8b94b84bee5ef580e2ea, type: 2}
-  - serializedVersion: 2
-    m_RefCount: 233
+  - m_RefCount: 233
     m_Data: {fileID: 11400000, guid: cada2d770f42df943bc20c2df86e65f3, type: 2}
-  - serializedVersion: 2
-    m_RefCount: 46
+  - m_RefCount: 46
     m_Data: {fileID: 11400000, guid: af3e3e1c1e8cf67489d5a202161e1d48, type: 2}
   m_TileSpriteArray:
-  - serializedVersion: 2
-    m_RefCount: 1
+  - m_RefCount: 1
     m_Data: {fileID: 9091817583076697662, guid: 0dfb96722b5262048a898718a59ee54c, type: 3}
-  - serializedVersion: 2
-    m_RefCount: 233
+  - m_RefCount: 233
     m_Data: {fileID: -575213218, guid: 0dfb96722b5262048a898718a59ee54c, type: 3}
-  - serializedVersion: 2
-    m_RefCount: 46
+  - m_RefCount: 46
     m_Data: {fileID: 221094055, guid: 0dfb96722b5262048a898718a59ee54c, type: 3}
   m_TileMatrixArray:
-  - serializedVersion: 2
-    m_RefCount: 280
+  - m_RefCount: 280
     m_Data:
       e00: 1
       e01: 0
@@ -3516,8 +3509,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - serializedVersion: 2
-    m_RefCount: 280
+  - m_RefCount: 280
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -3596,7 +3588,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051484925}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
