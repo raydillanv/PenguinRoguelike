@@ -17,10 +17,11 @@ namespace Enemies
         public GameObject fishLoot;
         [SerializeField] protected AbstractProjectile projectile;
         protected Rigidbody2D rb;
-    
+
         protected virtual void Start()
         {
             currentHealth = maxHealth;
+            rb = GetComponent<Rigidbody2D>();
         }
 
         protected virtual void FixedUpdate()
@@ -68,7 +69,7 @@ namespace Enemies
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                GameManager.instance.takeDamage(contactDamage);
+                GameManager.instance.TakeDamage(contactDamage);
             }
         }
     }

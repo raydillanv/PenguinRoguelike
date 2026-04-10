@@ -24,7 +24,7 @@ namespace Enemies
             float distance = Vector2.Distance(transform.position, player.position);
             if (distance > targetDistance)
             {
-                transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+                rb.MovePosition(Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime));
             }
         }
 

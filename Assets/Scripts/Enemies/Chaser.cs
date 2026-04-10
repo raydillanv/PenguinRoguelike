@@ -12,10 +12,10 @@ namespace Enemies
             float distance = Vector2.Distance(transform.position, player.position);
     
             if(!flee) {
-                transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+                rb.MovePosition(Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime));
             } else {
                 if(distance > returnDistance) flee = false;
-                transform.position = Vector2.MoveTowards(transform.position, player.position, -1 * moveSpeed * Time.deltaTime);
+                rb.MovePosition(Vector2.MoveTowards(transform.position, player.position, -1 * moveSpeed * Time.deltaTime));
             }
         }
 

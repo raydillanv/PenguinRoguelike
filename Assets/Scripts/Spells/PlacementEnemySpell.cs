@@ -4,8 +4,6 @@ namespace Spells
 {
     public class PlacementEnemySpell : Spell
     {
-        public float damage = 20f;
-        public float lifetime = 2f;
         public bool useAnimatorLength = true;
 
         private void OnValidate()
@@ -17,7 +15,7 @@ namespace Spells
             }
         }
 
-        public override void Cast(SpellCaster caster)
+        public override void OnCast(SpellCaster caster)
         {
             var enemy = caster.FindNearestEnemy(Mathf.Infinity);
             if (!enemy) return;
@@ -32,7 +30,7 @@ namespace Spells
                 duration = animator.GetCurrentAnimatorStateInfo(0).length;
             }
 
-        Destroy(instance, duration);
+            Destroy(instance, duration);
         }
     }
 }

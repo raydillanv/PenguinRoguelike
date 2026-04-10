@@ -16,14 +16,14 @@ public class GameManager : MonoBehaviour
     public float moveSpeed = 5f;
     
     // Keep track of currents
-    private float _currentHealth;
-    private float _currentMana;
+    public float health;
+    public float mana;
     private string _currentStage;
     
     // Autograbs on sceneload
     public GameObject player;
     public PlayerBehavior playerScript;
-    
+    public UIManager uiManager;
     
     public bool stage1Done = false;
     public bool stage2Done = false;
@@ -39,16 +39,21 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
-        _currentHealth = maxHealth;
-        _currentMana = maxMana;
+        health = maxHealth;
+        mana = maxMana;
         _currentStage = SceneManager.GetActiveScene().name;
         RefreshPlayerReference();
+        uiManager.RefreshValues();
     }
 
     public void FixedUpdate()
     {
-        if (_currentMana < maxMana)
-            _currentMana = Mathf.Min(_currentMana + Mathf.Ceil(manaRegen), maxMana);
+        if (mana < maxMana)
+        {
+            mana = Mathf.Min(mana + Mathf.Ceil(manaRegen), maxMana);
+            uiManager.RefreshValues();
+        }
+
     }
 
     private void OnEnable()
@@ -108,26 +113,43 @@ public class GameManager : MonoBehaviour
     public void AddToHealth(float value)
     {
         maxHealth += value;
+        uiManager.RefreshValues();
     }
     
-    public void takeDamage(float damage)
+    public void TakeDamage(float damage)
     {
-        _currentHealth -= damage;
-        if (_currentHealth <= 0) ResetLevel();
+        health -= damage;
+        if (health <= 0) ResetLevel();
+        uiManager.RefreshValues();
+    }
+
+    public bool ReduceMana(float value)
+    {
+        mana -= value;
+        if (mana <= 0)
+        {
+            mana = 0;
+            return false;
+        }
+        
+        uiManager.RefreshValues();
+        return true;
     }
 
     public void RestoreHealth(float value)
     {
-        _currentHealth = Mathf.Min(_currentHealth + Mathf.Ceil(value), GameManager.instance.maxHealth);
+        health = Mathf.Min(health + Mathf.Ceil(value), GameManager.instance.maxHealth);
+        uiManager.RefreshValues();
     }
-    
-    public void ResetCharacter() { _currentHealth = maxHealth; _currentMana = maxMana; }
+
+    public void ResetCharacter() { health = maxHealth; mana = maxMana; }
 
     public void ResetLevel()
     {
         ResetCharacter();
         SceneManager.LoadScene(_currentStage);
         RefreshPlayerReference();
+        uiManager.RefreshValues();
     }
 
     // listeners for events
@@ -141,5 +163,6 @@ public class GameManager : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerBehavior>();
+        uiManager = FindAnyObjectByType<Canvas>()?.GetComponent<UIManager>();
     }
 }
