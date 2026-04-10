@@ -22,11 +22,14 @@ public class HomeManager : MonoBehaviour
     public GameObject BossDoorNotReady;
     public GameObject BossDoorReady;
     public GameObject BossDoorAnimation;
-    
+
+    public GameObject IntroScene;
+    public GameObject ShopCollider;
+
     // A script that sets the home scene up on start based on the bools inside the game manager.
-    
-    
-    
+
+
+
     void Start()
     {
         _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
@@ -41,25 +44,33 @@ public class HomeManager : MonoBehaviour
         if (_gameManager.stage1Done == true)
         {
             Stage1Door.SetActive(false);
-            print("Stage 1 Done");
+            //print("Stage 1 Done");
+            IntroScene.SetActive(false);
+            ShopCollider.SetActive(true);
         }
 
         if (_gameManager.stage2Done == true)
         {
             Stage2Door.SetActive(false);
+            IntroScene.SetActive(false);
+            ShopCollider.SetActive(true);
         }
 
         if (_gameManager.stage3Done == true)
         {
             Stage3Door.SetActive(false);
+            IntroScene.SetActive(false);
+            ShopCollider.SetActive(true);
         }
 
         if (_gameManager.stage4Done == true)
         {
             Stage4Door.SetActive(false);
+            IntroScene.SetActive(false);
+            ShopCollider.SetActive(true);
         }
 
-        if (_gameManager.Stars == 4)
+        if (_gameManager.Stars >= 4)
         {
             BossDoorNotReady.SetActive(false);
             BossDoorReady.SetActive(true);

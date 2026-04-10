@@ -312,6 +312,17 @@ RectTransform:
   m_AnchoredPosition: {x: -710, y: 377}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &220307959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7546850838782435146, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+  m_PrefabInstance: {fileID: 4397111906110333928}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aba7e388feaccb408023af52bfa18d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextReader
 --- !u!1 &312066772
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,6 +2615,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Intro
   IntroDialogue: {fileID: 1108547808}
+  textReader: {fileID: 220307959}
+  IntroUI: {fileID: 7097441225808568789}
+  ShopCollider: {fileID: 1117145103}
 --- !u!114 &1108547808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,7 +2631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textFileToParse: {fileID: 4900000, guid: 9bd7abc4404397a4b9004ccf63c756d5, type: 3}
-  Repeatable: 1
+  Repeatable: 0
   GiveRandomText: 0
   RandomTexts:
   - {fileID: 4900000, guid: 18809d06362aacd47bf1bc995682a759, type: 3}
@@ -2676,7 +2690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &1117145104
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4452,7 +4466,7 @@ GameObject:
   - component: {fileID: 1795215233}
   - component: {fileID: 1795215232}
   m_Layer: 0
-  m_Name: background
+  m_Name: background and home manager
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4796,6 +4810,8 @@ MonoBehaviour:
   BossDoorNotReady: {fileID: 1951261854}
   BossDoorReady: {fileID: 526748293}
   BossDoorAnimation: {fileID: 47469006}
+  IntroScene: {fileID: 7097441225808568789}
+  ShopCollider: {fileID: 1117145103}
 --- !u!60 &1795215233
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class Intro : MonoBehaviour
     public Dialogue IntroDialogue;
     public TextReader textReader;
     public GameObject IntroUI;
+    public GameObject ShopCollider;
 
     void Start()
     {
@@ -22,9 +23,10 @@ public class Intro : MonoBehaviour
         while (true)
         {
             
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
             if (textReader.NoMoreLines)
             {
+                ShopCollider.SetActive(true);
                 IntroUI.SetActive(false);
                 yield break;
             }
