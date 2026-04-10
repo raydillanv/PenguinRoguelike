@@ -6,17 +6,7 @@ namespace Enemies
     {
         public bool flee;
         public float returnDistance;
-
-        protected override void Start()
-        {
-            base.Start();
         
-            maxHealth = 30f;
-            moveSpeed = 5f;
-            contactDamage = 10f;
-        }
-    
-
         protected override void move()
         {
             float distance = Vector2.Distance(transform.position, player.position);

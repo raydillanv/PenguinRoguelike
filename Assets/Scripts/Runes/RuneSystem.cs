@@ -26,7 +26,7 @@ namespace Runes
             cooldowns = new Dictionary<Rune, float>();
             unactiveRunes = new List<Rune>(runes);
 
-            if (!spellCasterReference) spellCasterReference = GameManager.instance.player.GetComponent<SpellCaster>();
+            if (!spellCasterReference) spellCasterReference = GameManager.instance.player?.GetComponent<SpellCaster>();
         }
 
         public float GetCooldownProgress(Rune rune)
@@ -119,6 +119,12 @@ namespace Runes
             
             if (rune.runePrefab && GameManager.instance.player)
                 rune.runePrefab.GetComponent<Spell>().Cast(spellCasterReference); 
+        }
+
+        public void RefreshReferences()
+        {
+            GameManager.instance.RefreshPlayerReference();
+            if (!spellCasterReference) spellCasterReference = GameManager.instance.player.GetComponent<SpellCaster>();
         }
 
         public void ResetMatching()
