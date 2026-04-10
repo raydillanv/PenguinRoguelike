@@ -60,12 +60,17 @@ public class GameManager : MonoBehaviour
     {
         // subscirbes to OnCurrencyLooted
         DroppedLoot.OnCurrencyLooted += HandleOnCurrencyLooted;
+        DroppedLootHeal.OnHealLooted += HandleOnHealLooted;
+        DroppedLootMana.OnManaLooted += HandleOnManaLooted;
+        
     }
 
     private void OnDisable()
     {
         // unsubscirbes to OnCurrencyLooted
         DroppedLoot.OnCurrencyLooted -= HandleOnCurrencyLooted;
+        DroppedLootHeal.OnHealLooted -= HandleOnHealLooted;
+        DroppedLootMana.OnManaLooted -= HandleOnManaLooted;
     }
 
     public void VisitStage(string stage)
@@ -157,6 +162,17 @@ public class GameManager : MonoBehaviour
     {
         AddCurrency(amount);
         print(amount + " added to currency. Current currency: " +  currency);
+    }
+
+    private void HandleOnHealLooted(int amount)
+    {
+        RestoreHealth(amount);
+        uiManager.RefreshValues();
+    }
+
+    private void HandleOnManaLooted(int amount)
+    {
+        print("adds mana when thats implemented.");
     }
 
     public void RefreshPlayerReference()
