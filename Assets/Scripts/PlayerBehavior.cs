@@ -57,9 +57,14 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
+    public void upgradeHealth(float newHealth)
+    {
+        _health = newHealth;
+    }
+
     private void die()
     {
-        GameManager.instance.lose();
+        // GameManager.instance.lose();
     }
 
     public void OnMove(InputAction.CallbackContext context)

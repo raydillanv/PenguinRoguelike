@@ -59,14 +59,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5673231636279122745, guid: 9aaecd9c0c7cd4661a70a8d50b3fe604, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6879259008142083568}
+      addedObject: {fileID: 2153018618411380561}
   m_SourcePrefab: {fileID: 100100000, guid: 9aaecd9c0c7cd4661a70a8d50b3fe604, type: 3}
 --- !u!1 &4674395452374453157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5673231636279122745, guid: 9aaecd9c0c7cd4661a70a8d50b3fe604, type: 3}
   m_PrefabInstance: {fileID: 1037402383381418140}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6879259008142083568
+--- !u!114 &2153018618411380561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,9 +77,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74683028953254d4894955b712f460d1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShotgunProjectile
-  speed: 0
-  damage: 0
-  lifetime: 0
-  owner: 0
+  m_EditorClassIdentifier: Assembly-CSharp::Shotgun
+  maxHealth: 0
+  moveSpeed: 0
+  contactDamage: 0
+  fishLoot: {fileID: 0}
   projectile: {fileID: 0}
+  projectile: {fileID: 0}
+  spreadAngle: 20

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // add some kind of current stage thing here
+    
     public static GameManager instance;
     public int currency;
     public int kills;
@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
         if (!instance) instance = this;
         else Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
+        
     }
 
     private void OnEnable()

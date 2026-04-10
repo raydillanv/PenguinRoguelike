@@ -1,25 +1,5 @@
 using UnityEngine;
 
-public class SniperProjectile : AbstractProjectile
-{
-
-    private void Start()
-    {
-        base.Start();
-        damage = 20f;
-    }
-    
-    protected override void move()
-    {
-        transform.position += (Vector3)(direction * (speed * Time.deltaTime));
-    }
-
-    protected override void HandleCollision(Collision2D collision)
-    {
-        collision.gameObject.GetComponent<PlayerBehavior>()?.takeDamage(damage);
-    }
-}
-
 public class Sniper : AbstractEnemy
 {
 
@@ -27,7 +7,6 @@ public class Sniper : AbstractEnemy
     public float orbitSpeed;
 
     private float angle;
-    private GameObject projectile;
     private PlayerBehavior _playerScript;
     
     new void Start()
@@ -40,6 +19,7 @@ public class Sniper : AbstractEnemy
         angle = Mathf.Atan2(offset.y, offset.x);
         
         _playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
+        attackCooldown = 2f;
     }
     
 
@@ -60,8 +40,8 @@ public class Sniper : AbstractEnemy
         
         Vector2 shootDir = predictShot - (Vector2) transform.position;
         
-        GameObject proj = Instantiate(projectile, transform.position, Quaternion.identity);
-        AbstractProjectile projectileScript = proj.GetComponent<SniperProjectile>();
+        AbstractProjectile proj = Instantiate(projectile, transform.position, Quaternion.identity);
+        SniperProjectile projectileScript = proj.GetComponent<SniperProjectile>();
         projectileScript.setDirection(shootDir);
     }
 

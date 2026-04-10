@@ -6,11 +6,14 @@ public abstract class AbstractEnemy : MonoBehaviour
     [SerializeField] protected float maxHealth;
     [SerializeField] protected float moveSpeed;
     [SerializeField] protected float contactDamage;
+    [SerializeField] protected float attackCooldown;
+    [SerializeField] protected float currentCooldown;
 
     protected float currentHealth;
     protected Transform player;
     public GameObject fishLoot;
-
+    [SerializeField] protected AbstractProjectile projectile;
+    
     protected virtual void Start()
     {
         currentHealth = maxHealth;
@@ -25,7 +28,13 @@ public abstract class AbstractEnemy : MonoBehaviour
     protected virtual void Update()
     {
         move();
-        attack();
+        if (currentCooldown == 0)
+        {
+            attack();
+            currentCooldown = attackCooldown;
+        }
+        currentCooldown -= Time.deltaTime;
+        
     }
 
     public virtual void TakeDamage(float damage)

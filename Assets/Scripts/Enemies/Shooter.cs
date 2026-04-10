@@ -1,23 +1,6 @@
 using System;
 using UnityEngine;
-public class ShooterProjectile : AbstractProjectile
-{
-    private void Start()
-    {
-        base.Start();
-        damage = 20f;
-    }
-    
-    protected override void move()
-    {
-        transform.position += (Vector3)(direction * (speed * Time.deltaTime));
-    }
 
-    protected override void HandleCollision(Collision2D collision)
-    {
-        collision.gameObject.GetComponent<PlayerBehavior>()?.takeDamage(damage);
-    }
-}
 public class Shooter : AbstractEnemy
 {
     float targetDistance;
@@ -31,6 +14,7 @@ public class Shooter : AbstractEnemy
         moveSpeed = 5f;
         contactDamage = 5f;
         targetDistance = 15f;
+        attackCooldown = 0.5f;
     }
     
 
@@ -51,7 +35,7 @@ public class Shooter : AbstractEnemy
             Vector2 shootDir = (player.transform.position - transform.position);
         
             GameObject proj = Instantiate(projectile, transform.position, Quaternion.identity);
-            AbstractProjectile projectileScript = proj.GetComponent<ShooterProjectile>();
+            ShooterProjectile projectileScript = proj.GetComponent<ShooterProjectile>();
             projectileScript.setDirection(shootDir);
         }
     }

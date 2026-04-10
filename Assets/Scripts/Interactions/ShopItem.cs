@@ -27,18 +27,13 @@ public class ShopButton : MonoBehaviour
          */
             
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     
     public void BuyHealth()
     {
         if (GameManager.instance.GetCurrency() >= cost)
         {
-            GameManager.instance.SetMaxHealth(val);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>().upgradeHealth(val);
             GameManager.instance.RemoveCurrency(cost);
             if (upgradeID == 0) ItemPersistence.instance.upgradeBought1 = true;
             if (upgradeID == 1) ItemPersistence.instance.upgradeBought2 = true;

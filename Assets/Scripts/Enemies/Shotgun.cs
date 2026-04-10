@@ -1,28 +1,9 @@
 using System;
 using UnityEngine;
 
-public class ShotgunProjectile : AbstractProjectile
-{
-    private void Start()
-    {
-        base.Start();
-        damage = 20f;
-    }
-    protected override void move()
-    {
-        transform.position += (Vector3)(direction * speed * Time.deltaTime);
-    }
-
-    protected override void HandleCollision(Collision2D collision)
-    {
-        collision.gameObject.GetComponent<PlayerBehavior>()?.takeDamage(damage);
-    }
-}
-
-public class ShotgunEnemy : AbstractEnemy
+public class Shotgun : AbstractEnemy
 {
     float targetDistance;
-    public GameObject projectile;
 
     public float spreadAngle = 20f; 
 
@@ -34,6 +15,7 @@ public class ShotgunEnemy : AbstractEnemy
         moveSpeed = 4f;
         contactDamage = 8f;
         targetDistance = 12f;
+        attackCooldown = 1f;
     }
 
     protected override void move()
@@ -64,7 +46,7 @@ public class ShotgunEnemy : AbstractEnemy
             {
                 Vector2 rotatedDir = RotateVector(baseDir, angle);
 
-                GameObject proj = Instantiate(projectile, transform.position, Quaternion.identity);
+                AbstractProjectile proj = Instantiate(projectile, transform.position, Quaternion.identity);
                 ShotgunProjectile projScript = proj.GetComponent<ShotgunProjectile>();
                 projScript.setDirection(rotatedDir);
             }
@@ -89,3 +71,4 @@ public class ShotgunEnemy : AbstractEnemy
         
     }
 }
+
