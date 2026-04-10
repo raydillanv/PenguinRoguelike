@@ -44,6 +44,8 @@ public abstract class AbstractEnemy : MonoBehaviour
         {
             Instantiate(fishLoot, transform.position, Quaternion.identity);
         }
+        
+        GameManager.instance.AddKillCount(1);
     }
     
     protected abstract void move();

@@ -13,12 +13,22 @@ public class PlayerBehavior : MonoBehaviour
     [Header("Debug")]
     public bool drawPath;
 
+    private float _health;
+    private float _mana;
+    private float _manaRegen;
+    
     private Vector2 _input;
     private Vector2 _lastInputDirection;
     private float _sendTime;
     private List<Vector2> _pathDirections = new List<Vector2>();
 
     public Vector2 Velocity => _input.normalized * moveSpeed;
+
+    private void Start()
+    {
+        _health = 100f;
+        _mana = _health;
+    }
 
     private void Update()
     {
@@ -30,6 +40,26 @@ public class PlayerBehavior : MonoBehaviour
             SendDirection(_input.normalized);
             _sendTime = 0;
         }
+
+        if (_mana < 100f)
+        {
+            _mana += _manaRegen;
+        }
+        
+    }
+
+    public void takeDamage(float damage)
+    {
+        _health -= damage;
+        if (_health <= 0)
+        {
+            die();
+        }
+    }
+
+    private void die()
+    {
+        GameManager.instance.lose();
     }
 
     public void OnMove(InputAction.CallbackContext context)

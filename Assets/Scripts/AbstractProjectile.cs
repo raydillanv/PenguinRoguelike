@@ -34,5 +34,12 @@ public abstract class AbstractProjectile : MonoBehaviour
     
     protected abstract void move();
     
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        HandleCollision(collision);
+    }
+    
+    protected abstract void HandleCollision(Collision2D collision);
+    
 }
 

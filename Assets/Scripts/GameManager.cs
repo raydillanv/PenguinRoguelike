@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // add some kind of current stage thing here
     public static GameManager instance;
     public int currency;
     public int kills;
@@ -83,11 +84,7 @@ public class GameManager : MonoBehaviour
         kills += amount;
     }
 
-    public void SetMaxHealth(int amount)
-    {
-        maxHealth += amount;
-        health = maxHealth;
-    }
+
 
     public void ResetHealth()
     {
