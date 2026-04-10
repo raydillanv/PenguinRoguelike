@@ -1,16 +1,84 @@
+using System;
 using UnityEngine;
 
-public class Shotgun : MonoBehaviour
+public class ShotgunProjectile : AbstractProjectile
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    protected override void move()
+    {
+        transform.position += (Vector3)(direction * speed * Time.deltaTime);
+    }
+}
+
+public class ShotgunEnemy : AbstractEnemy
+{
+    float targetDistance;
+    public GameObject projectile;
+
+    public float spreadAngle = 20f; 
+
     void Start()
     {
-        
+        base.Start();
+
+        maxHealth = 60f;
+        moveSpeed = 4f;
+        contactDamage = 8f;
+        targetDistance = 12f;
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void move()
     {
-        
+        float distance = Vector2.Distance(transform.position, player.position);
+
+        if (distance > targetDistance)
+        {
+            transform.position = Vector2.MoveTowards(
+                transform.position,
+                player.position,
+                moveSpeed * Time.deltaTime
+            );
+        }
+    }
+
+    protected override void attack()
+    {
+        float distance = Vector2.Distance(transform.position, player.position);
+
+        if (distance <= targetDistance)
+        {
+            Vector2 baseDir = (player.position - transform.position).normalized;
+            
+            float[] angles = { -spreadAngle / 2f, 0f, spreadAngle / 2f };
+
+            foreach (float angle in angles)
+            {
+                Vector2 rotatedDir = RotateVector(baseDir, angle);
+
+                GameObject proj = Instantiate(projectile, transform.position, Quaternion.identity);
+                ShotgunProjectile projScript = proj.GetComponent<ShotgunProjectile>();
+                projScript.setDirection(rotatedDir);
+            }
+        }
+    }
+
+    private Vector2 RotateVector(Vector2 v, float degrees)
+    {
+        float rad = degrees * Mathf.Deg2Rad;
+
+        float sin = Mathf.Sin(rad);
+        float cos = Mathf.Cos(rad);
+
+        return new Vector2(
+            v.x * cos - v.y * sin,
+            v.x * sin + v.y * cos
+        );
+    }
+
+    protected override void HandleCollision(Collision2D collision)
+    {
+        if (collision.collider.tag == ("Player"))
+        {
+            TakeDamage(10f);
+        }
     }
 }

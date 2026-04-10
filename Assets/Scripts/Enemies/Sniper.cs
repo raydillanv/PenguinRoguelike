@@ -57,6 +57,8 @@ public class Sniper : AbstractEnemy
     {
         throw new System.NotImplementedException();
     }
+    
+    
 }
 
 

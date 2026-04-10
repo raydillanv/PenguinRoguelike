@@ -39,6 +39,5 @@ public class Chaser : AbstractEnemy
             TakeDamage(10f);
         }
         
-        
     }
 }
