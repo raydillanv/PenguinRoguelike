@@ -18,6 +18,7 @@ public class openShop : MonoBehaviour, IInteractable
     public void shop()
     {
         _shop.SetActive(true);
+        Cursor.visible = true;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

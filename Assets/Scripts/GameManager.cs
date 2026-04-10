@@ -4,6 +4,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public int currency;
+    public int maxHealth;
+    public int health;
     public int kills;
     public int Stars = 0;
     
@@ -79,6 +81,17 @@ public class GameManager : MonoBehaviour
     public void AddKillCount(int amount)
     {
         kills += amount;
+    }
+    
+    public void addHealth(int amount)
+    {
+        maxHealth += amount;
+        health = maxHealth;
+    }
+
+    public void resetHealth()
+    {
+        health = maxHealth;
     }
 
     // listeners for events
