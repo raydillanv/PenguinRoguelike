@@ -35,11 +35,27 @@ public class ShopButton : MonoBehaviour
         {
             GameManager.instance.AddToHealth(val);
             GameManager.instance.RemoveCurrency(cost);
-            if (upgradeID == 0) ItemPersistence.instance.upgradeBought1 = true;
-            if (upgradeID == 1) ItemPersistence.instance.upgradeBought2 = true;
-            if (upgradeID == 2) ItemPersistence.instance.upgradeBought3 = true;
-            if (upgradeID == 3) ItemPersistence.instance.upgradeBought4 = true;
+            if (upgradeID == 0) PurchaseSingleton.instance.upgradeBought1 = true;
+            if (upgradeID == 1) PurchaseSingleton.instance.upgradeBought2 = true;
+            if (upgradeID == 2) PurchaseSingleton.instance.upgradeBought3 = true;
+            if (upgradeID == 3) PurchaseSingleton.instance.upgradeBought4 = true;
             gameObject.SetActive(false); 
         }
     }
+    
+   /**
+    * public void YourBuyMethod()
+    {
+        if (GameManager.instance.GetCurrency() >= cost)
+        {
+            GameManager.instance.yourStatSetter(val);
+            GameManager.instance.RemoveCurrency(cost);
+            if (upgradeID == 4) PurchaseSingleton.instance.upgradeBought5 = true;
+            if (upgradeID == 5) PurchaseSingleton.instance.upgradeBought6 = true;
+            if (upgradeID == 6) PurchaseSingleton.instance.upgradeBought7 = true;
+            if (upgradeID == 7) PurchaseSingleton.instance.upgradeBought8 = true;
+            gameObject.SetActive(false); 
+        }
+    }
+    */
 }
