@@ -48,27 +48,21 @@ public class PlayerBehavior : MonoBehaviour
         {
             _sendTime = Time.time + 0.05f;
             TriggerDirectionAnimation(_input);
+        } else if (context.canceled)
+        {
+            _animator?.SetTrigger("Stopped");
         }
     }
 
     private void TriggerDirectionAnimation(Vector2 input)
     {
-        if (_animator == null) return;
+        if (!_animator) return;
 
         // Determine dominant axis
-        if (Mathf.Abs(input.x) >= Mathf.Abs(input.y))
-        {
-            if (input.x > 0)
-                _animator.SetTrigger("Right");
-            else
-                _animator.SetTrigger("Left");
-        }
-        else
-        {
-            if (input.y > 0)
-                _animator.SetTrigger("Up");
-            else
-                _animator.SetTrigger("Down");
+        if (Mathf.Abs(input.x) >= Mathf.Abs(input.y)) {
+            _animator.SetTrigger(input.x > 0 ? "Right" : "Left");
+        } else {
+            _animator.SetTrigger(input.y > 0 ? "Up" : "Down");
         }
     }
 
