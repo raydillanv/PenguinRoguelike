@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Spells;
 using UnityEngine;
 
 namespace Runes
 {
     public class RuneSystem : MonoBehaviour
     {
-        public GameObject playerReference;
+        public SpellCaster spellCasterReference;
 
         public List<Rune> runes = new List<Rune>();
         private Dictionary<Rune, int> activeMatches = new Dictionary<Rune, int>();
@@ -24,8 +25,8 @@ namespace Runes
             activeMatches = new Dictionary<Rune, int>();
             cooldowns = new Dictionary<Rune, float>();
             unactiveRunes = new List<Rune>(runes);
-            
-            if (!playerReference) playerReference = GameObject.FindGameObjectWithTag("Player");
+
+            if (!spellCasterReference) spellCasterReference = GameManager.instance.player.GetComponent<SpellCaster>();
         }
 
         public float GetCooldownProgress(Rune rune)
@@ -116,8 +117,8 @@ namespace Runes
             Debug.Log($"Rune matched: {rune.name}");
             cooldowns[rune] = Time.time;
             
-            if (rune.runePrefab && playerReference)
-                Instantiate(rune.runePrefab, playerReference.transform.position, Quaternion.identity);
+            if (rune.runePrefab && GameManager.instance.player)
+                rune.runePrefab.GetComponent<Spell>().Cast(spellCasterReference); 
         }
 
         public void ResetMatching()

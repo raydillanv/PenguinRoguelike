@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class SpellCaster : MonoBehaviour
 {
-    public static SpellCaster Instance { get; private set; }
-    private Transform Player { get; set; }
+    public Canvas canvas;
+    public Transform player;
 
-    private void Awake()
+    private void Start()
     {
-        Instance = this;
-        Player = transform;
+        canvas = FindAnyObjectByType<Canvas>();
+        player = FindAnyObjectByType<PlayerBehavior>().transform;
     }
 
     public Transform FindNearestEnemy(float maxRange)
@@ -20,8 +20,8 @@ public class SpellCaster : MonoBehaviour
         foreach (var enemy in enemies)
         {
             if (!enemy) continue;
-            
-            float dist = Vector2.Distance(Player.position, enemy.transform.position);
+
+            float dist = Vector2.Distance(player.position, enemy.transform.position);
             if (dist < minDist)
             {
                 minDist = dist;

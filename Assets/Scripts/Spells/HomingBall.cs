@@ -1,7 +1,8 @@
 using Enemies;
+using Spells;
 using UnityEngine;
 
-public class HomingBall : MonoBehaviour
+public class HomingBall : Spell
 {
     public float speed = 8f;
     public float turnSpeed = 5f;
@@ -11,10 +12,12 @@ public class HomingBall : MonoBehaviour
 
     private Transform target;
 
-    private void Start()
+    public override void Cast(SpellCaster caster)
     {
-        target = SpellCaster.Instance?.FindNearestEnemy(maxRange);
-        Destroy(gameObject, lifetime);
+        var instance = Instantiate(gameObject, caster.player.position, Quaternion.identity);
+        var spell = instance.GetComponent<HomingBall>();
+        spell.target = caster.FindNearestEnemy(spell.maxRange);
+        Destroy(instance, spell.lifetime);
     }
 
     private void Update()

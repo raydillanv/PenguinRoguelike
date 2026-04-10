@@ -33,7 +33,7 @@ public class ShopButton : MonoBehaviour
     {
         if (GameManager.instance.GetCurrency() >= cost)
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>().AddToHealth(val);
+            GameManager.instance.AddToHealth(val);
             GameManager.instance.RemoveCurrency(cost);
             if (upgradeID == 0) ItemPersistence.instance.upgradeBought1 = true;
             if (upgradeID == 1) ItemPersistence.instance.upgradeBought2 = true;

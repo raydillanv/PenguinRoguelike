@@ -18,5 +18,6 @@ public class openGame : MonoBehaviour
     {
         Cursor.visible = false;
         SceneManager.LoadScene("Home");
+        GameManager.instance.RefreshPlayerReference();
     }
 }

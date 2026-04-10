@@ -51,6 +51,7 @@ public class MenuManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Home");
+        GameManager.instance.RefreshPlayerReference();
     }
 
     public void quit()
@@ -66,6 +67,6 @@ public class MenuManager : MonoBehaviour
     public void restartLvl()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameManager.instance.ResetLevel();
     }
 }

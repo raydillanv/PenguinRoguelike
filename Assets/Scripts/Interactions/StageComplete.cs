@@ -30,5 +30,6 @@ public class StageComplete : MonoBehaviour, IInteractable
         SceneManager.LoadScene(sceneName);
         _gameManager.VisitStage(sceneName);
         _gameManager.AddStar();
+        GameManager.instance.RefreshPlayerReference();
     }
 }

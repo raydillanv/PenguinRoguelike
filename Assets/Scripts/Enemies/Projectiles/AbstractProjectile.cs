@@ -31,7 +31,7 @@ namespace Enemies.Projectiles
     
         protected virtual void OnCollisionEnter2D(Collision2D collision)
         {
-            collision.gameObject.GetComponent<PlayerBehavior>()?.takeDamage(damage);
+            GameManager.instance.takeDamage(damage);
         }
     }
 }

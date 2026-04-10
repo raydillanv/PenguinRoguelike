@@ -73,7 +73,7 @@ namespace Enemies
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                collision.gameObject.GetComponent<PlayerBehavior>().takeDamage(contactDamage);
+                GameManager.instance.takeDamage(contactDamage);
             }
         }
     }

@@ -1,14 +1,28 @@
-using UnityEngine;
+using System;
+using UnityEngine; 
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     
     public static GameManager instance;
+    
     public int currency;
     public int kills;
     public int Stars = 0;
-    public int maxHealth = 100;
-    public int health = 100;
+    public float maxMana = 100f;
+    public float maxHealth = 100f;
+    public float manaRegen = 5f;
+    public float moveSpeed = 5f;
+    
+    // Keep track of currents
+    private float _currentHealth;
+    private float _currentMana;
+    private string _currentStage;
+    
+    // Autograbs on sceneload
+    public GameObject player;
+    public PlayerBehavior playerScript;
     
     
     public bool stage1Done = false;
@@ -18,10 +32,23 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (!instance) instance = this;
-        else Destroy(gameObject);
+        if (instance && instance != this) { Destroy(gameObject); return; }
+        instance = this; 
         DontDestroyOnLoad(gameObject);
-        
+    }
+
+    public void Start()
+    {
+        _currentHealth = maxHealth;
+        _currentMana = maxMana;
+        _currentStage = SceneManager.GetActiveScene().name;
+        RefreshPlayerReference();
+    }
+
+    public void FixedUpdate()
+    {
+        if (_currentMana < maxMana)
+            _currentMana = Mathf.Min(_currentMana + Mathf.Ceil(manaRegen), maxMana);
     }
 
     private void OnEnable()
@@ -38,20 +65,13 @@ public class GameManager : MonoBehaviour
 
     public void VisitStage(string stage)
     {
-        if (stage == "Stage 1")
-        {
+        if (stage == "Stage 1") {
             stage1Done = true;
-        }
-        else if (stage == "Stage 2")
-        {
-            stage2Done = true;
-        }
-        else if (stage == "Stage 3")
-        {
+        } else if (stage == "Stage 2") {
+            stage2Done = true; 
+        } else if (stage == "Stage 3") {
             stage3Done = true;
-        }
-        else if (stage == "Stage 4")
-        {
+        } else if (stage == "Stage 4") {
             stage4Done = true;
         }
     }
@@ -85,12 +105,29 @@ public class GameManager : MonoBehaviour
     {
         kills += amount;
     }
-
-
-
-    public void ResetHealth()
+    public void AddToHealth(float value)
     {
-        health = maxHealth;
+        maxHealth += value;
+    }
+    
+    public void takeDamage(float damage)
+    {
+        _currentHealth -= damage;
+        if (_currentHealth <= 0) ResetLevel();
+    }
+
+    public void RestoreHealth(float value)
+    {
+        _currentHealth = Mathf.Min(_currentHealth + Mathf.Ceil(value), GameManager.instance.maxHealth);
+    }
+    
+    public void ResetCharacter() { _currentHealth = maxHealth; _currentMana = maxMana; }
+
+    public void ResetLevel()
+    {
+        ResetCharacter();
+        SceneManager.LoadScene(_currentStage);
+        RefreshPlayerReference();
     }
 
     // listeners for events
@@ -100,4 +137,9 @@ public class GameManager : MonoBehaviour
         print(amount + " added to currency. Current currency: " +  currency);
     }
 
+    public void RefreshPlayerReference()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerScript = player.GetComponent<PlayerBehavior>();
+    }
 }

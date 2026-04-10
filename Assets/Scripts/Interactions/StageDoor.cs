@@ -29,5 +29,6 @@ public class StageDoor : MonoBehaviour, IInteractable
     {
         SceneManager.LoadScene(sceneName);
         _gameManager.VisitStage(sceneName);
+        GameManager.instance.RefreshPlayerReference();
     }
 }
