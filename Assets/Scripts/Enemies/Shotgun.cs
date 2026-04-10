@@ -76,9 +76,6 @@ public class ShotgunEnemy : AbstractEnemy
 
     protected override void HandleCollision(Collision2D collision)
     {
-        if (collision.collider.tag == ("Player"))
-        {
-            TakeDamage(10f);
-        }
+        
     }
 }

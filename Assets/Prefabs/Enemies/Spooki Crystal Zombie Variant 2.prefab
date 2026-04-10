@@ -50,10 +50,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4173605675468509013, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
       propertyPath: m_Name
-      value: Spooki Crystal Zombie
+      value: Spooki Crystal Zombie Variant 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6511703871686247821, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4173605675468509013, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4474676070434440889}
   m_SourcePrefab: {fileID: 100100000, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
+--- !u!1 &9086057898469040849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4173605675468509013, guid: 1c45e972bff8d4cb4a7e9f6a35b2bace, type: 3}
+  m_PrefabInstance: {fileID: 5184639032289389956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4474676070434440889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9086057898469040849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ae05d294fd2284eb4f599aac129859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sniper
+  maxHealth: 0
+  moveSpeed: 0
+  contactDamage: 0
+  fishLoot: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
+  orbit: 0
+  orbitSpeed: 0

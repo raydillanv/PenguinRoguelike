@@ -34,10 +34,6 @@ public class Chaser : AbstractEnemy
 
     protected override void HandleCollision(Collision2D collision)
     {
-        if (collision.collider.gameObject.tag == "Player")
-        {
-            TakeDamage(10f);
-        }
         
     }
 }
