@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 3330225722004241121}
   - component: {fileID: 2730821605331936325}
   - component: {fileID: 6142249522509471283}
+  - component: {fileID: 8505325736761386910}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -339,9 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b3a87b2e632c4a4db04b5bf2acd0efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBehavior
-  moveSpeed: 10
   runeSystem: {fileID: 0}
-  drawPath: 0
 --- !u!70 &2176936546735609955
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -389,7 +388,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 3560465976170433664}
   m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 1
   m_Mass: 0.83364594
   m_LinearDamping: 0
@@ -404,7 +403,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &2730821605331936325
 MonoBehaviour:
@@ -548,6 +547,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27167ea91af93d140b1804417b08019a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellCaster
+  canvas: {fileID: 0}
+  player: {fileID: 0}
+--- !u!95 &8505325736761386910
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3560465976170433664}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 99b331efa0da53041a8d3f73e1f6f387, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4634685747056104665
 GameObject:
   m_ObjectHideFlags: 0
