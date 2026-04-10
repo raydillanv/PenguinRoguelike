@@ -76,6 +76,7 @@ crashlytics-build.properties
 
 # Other Annoyances
 .idea/
+.vscode/
 .DS_Store
 /Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials
 /Assets/TextMesh Pro
