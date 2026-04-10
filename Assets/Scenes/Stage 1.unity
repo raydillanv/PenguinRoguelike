@@ -119,11 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &40245799 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3560465976170433664, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+--- !u!114 &40245801 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6142249522509471283, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
   m_PrefabInstance: {fileID: 902104963}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27167ea91af93d140b1804417b08019a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellCaster
 --- !u!1 &62204000
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,67 +180,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 5981587103694041066, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
   m_PrefabInstance: {fileID: 902104963}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &554692507
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5388015178124766512, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_Name
-      value: RuneSystem
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.93755
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.55806
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689554864268963618, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8279173676412084249, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
-      propertyPath: playerReference
-      value: 
-      objectReference: {fileID: 40245799}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a77b3dbdf08721b42a11b1803f2159f2, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +317,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2531805472426353267, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+      propertyPath: runeSystem
+      value: 
+      objectReference: {fileID: 1841942058}
     - target: {fileID: 3560465976170433664, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
       propertyPath: m_Name
       value: Player
@@ -608,6 +557,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1841942058 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5162140020976744493, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+  m_PrefabInstance: {fileID: 4397111906110333928}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f502e567d37a4f26bc6dfddd773c39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Runes.RuneSystem
 --- !u!224 &1987709534 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3308748962534416350, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
@@ -3516,21 +3476,28 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1
+  - serializedVersion: 2
+    m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a2e7e4f1409a8b94b84bee5ef580e2ea, type: 2}
-  - m_RefCount: 233
+  - serializedVersion: 2
+    m_RefCount: 233
     m_Data: {fileID: 11400000, guid: cada2d770f42df943bc20c2df86e65f3, type: 2}
-  - m_RefCount: 46
+  - serializedVersion: 2
+    m_RefCount: 46
     m_Data: {fileID: 11400000, guid: af3e3e1c1e8cf67489d5a202161e1d48, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
+  - serializedVersion: 2
+    m_RefCount: 1
     m_Data: {fileID: 9091817583076697662, guid: 0dfb96722b5262048a898718a59ee54c, type: 3}
-  - m_RefCount: 233
+  - serializedVersion: 2
+    m_RefCount: 233
     m_Data: {fileID: -575213218, guid: 0dfb96722b5262048a898718a59ee54c, type: 3}
-  - m_RefCount: 46
+  - serializedVersion: 2
+    m_RefCount: 46
     m_Data: {fileID: 221094055, guid: 0dfb96722b5262048a898718a59ee54c, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 280
+  - serializedVersion: 2
+    m_RefCount: 280
     m_Data:
       e00: 1
       e01: 0
@@ -3549,7 +3516,8 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 280
+  - serializedVersion: 2
+    m_RefCount: 280
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -3917,6 +3885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player UI
       objectReference: {fileID: 0}
+    - target: {fileID: 5162140020976744493, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+      propertyPath: spellCasterReference
+      value: 
+      objectReference: {fileID: 40245801}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4207,5 +4179,4 @@ SceneRoots:
   - {fileID: 5787167695480625265}
   - {fileID: 2155257179341312363}
   - {fileID: 62204002}
-  - {fileID: 554692507}
   - {fileID: 1657650335024222912}

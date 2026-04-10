@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Campfire
   m_EditorClassIdentifier: Assembly-CSharp::Runes.Rune
   directions:
-  - {x: -0.70710677, y: -0.70710677}
+  - {x: 0.70710677, y: -0.70710677}
   - {x: -1, y: 0}
   - {x: 0.70710677, y: 0.70710677}
   runePrefab: {fileID: 3300299787576391534, guid: 28a2b935af5f14097ab5a0a2116b1755, type: 3}

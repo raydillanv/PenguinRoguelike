@@ -1151,43 +1151,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2176936546735609955, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_Size.x
-      value: 0.36795616
-      objectReference: {fileID: 0}
-    - target: {fileID: 2176936546735609955, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_Size.y
-      value: 0.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 2176936546735609955, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0060219765
-      objectReference: {fileID: 0}
-    - target: {fileID: 2176936546735609955, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 2531805472426353267, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+      propertyPath: runeSystem
+      value: 
+      objectReference: {fileID: 4397111906110333930}
     - target: {fileID: 3560465976170433664, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5981587103694041066, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5981587103694041066, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5981587103694041066, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+--- !u!114 &902104964 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6142249522509471283, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
+  m_PrefabInstance: {fileID: 902104963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27167ea91af93d140b1804417b08019a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellCaster
 --- !u!1 &922340853
 GameObject:
   m_ObjectHideFlags: 0
@@ -8647,41 +8634,58 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 2
+  - serializedVersion: 2
+    m_RefCount: 2
     m_Data: {fileID: 11400000, guid: a3c416dc77f04554aae398992fe15d5e, type: 2}
-  - m_RefCount: 141
+  - serializedVersion: 2
+    m_RefCount: 141
     m_Data: {fileID: 11400000, guid: dc86173b7141cb1408576a4eaab51f52, type: 2}
-  - m_RefCount: 227
+  - serializedVersion: 2
+    m_RefCount: 227
     m_Data: {fileID: 11400000, guid: 17d638fac2e415e489939d22de4cc726, type: 2}
-  - m_RefCount: 0
+  - serializedVersion: 2
+    m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
+  - serializedVersion: 2
+    m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 4e220299b38c2364383476940c3c4191, type: 2}
-  - m_RefCount: 3
+  - serializedVersion: 2
+    m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 3863329a579444c4eb5c221f780381a3, type: 2}
-  - m_RefCount: 1
+  - serializedVersion: 2
+    m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a6a7147752d6f7c43ba25cbb570a55e1, type: 2}
-  - m_RefCount: 3
+  - serializedVersion: 2
+    m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 93bf94b3d0b05d24882a938737ea6c63, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 2
+  - serializedVersion: 2
+    m_RefCount: 2
     m_Data: {fileID: 638385264, guid: e0550c0ee02a42545a5924716bb158f9, type: 3}
-  - m_RefCount: 141
+  - serializedVersion: 2
+    m_RefCount: 141
     m_Data: {fileID: 1689534024, guid: e0550c0ee02a42545a5924716bb158f9, type: 3}
-  - m_RefCount: 227
+  - serializedVersion: 2
+    m_RefCount: 227
     m_Data: {fileID: -8379371312176134950, guid: e0550c0ee02a42545a5924716bb158f9, type: 3}
-  - m_RefCount: 0
+  - serializedVersion: 2
+    m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
+  - serializedVersion: 2
+    m_RefCount: 1
     m_Data: {fileID: 321293980, guid: e0550c0ee02a42545a5924716bb158f9, type: 3}
-  - m_RefCount: 3
+  - serializedVersion: 2
+    m_RefCount: 3
     m_Data: {fileID: 335233696, guid: e0550c0ee02a42545a5924716bb158f9, type: 3}
-  - m_RefCount: 2
+  - serializedVersion: 2
+    m_RefCount: 2
     m_Data: {fileID: -2076110042, guid: e0550c0ee02a42545a5924716bb158f9, type: 3}
-  - m_RefCount: 3
+  - serializedVersion: 2
+    m_RefCount: 3
     m_Data: {fileID: -233989191, guid: e0550c0ee02a42545a5924716bb158f9, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 379
+  - serializedVersion: 2
+    m_RefCount: 379
     m_Data:
       e00: 1
       e01: 0
@@ -8700,7 +8704,8 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 379
+  - serializedVersion: 2
+    m_RefCount: 379
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -9164,6 +9169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player UI
       objectReference: {fileID: 0}
+    - target: {fileID: 5162140020976744493, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+      propertyPath: spellCasterReference
+      value: 
+      objectReference: {fileID: 902104964}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -9177,6 +9186,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3308748962534416350, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
   m_PrefabInstance: {fileID: 4397111906110333928}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4397111906110333930 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5162140020976744493, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+  m_PrefabInstance: {fileID: 4397111906110333928}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f502e567d37a4f26bc6dfddd773c39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Runes.RuneSystem
 --- !u!1001 &4569570674227857526
 PrefabInstance:
   m_ObjectHideFlags: 0
