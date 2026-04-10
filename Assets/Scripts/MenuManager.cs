@@ -10,7 +10,6 @@ public class MenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Cursor.visible = false;
         isPaused = false;
     }
 
@@ -28,8 +27,7 @@ public class MenuManager : MonoBehaviour
             else
             {
                 resume();
-                isPaused = false;
-                Cursor.visible = false;
+                exitGeneralUI();
             }
         }
     }
@@ -49,8 +47,7 @@ public class MenuManager : MonoBehaviour
     public void playButton()
     {
         SceneManager.LoadScene("Home");
-        Time.timeScale = 1;
-        Cursor.visible = false;
+        exitGeneralUI();
     }
 
     public void quit()
@@ -59,11 +56,14 @@ public class MenuManager : MonoBehaviour
         Time.timeScale = 1;
         Cursor.visible = true;
     }
-    
+    public void exitGeneralUI()
+    {
+        Cursor.visible = false;
+        Time.timeScale = 1;
+    }
     public void restartLvl()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Time.timeScale = 1;
-        Cursor.visible = false;
+        exitGeneralUI();
     }
 }

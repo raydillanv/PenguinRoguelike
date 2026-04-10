@@ -1,9 +1,11 @@
 using UnityEngine;
+using TMPro;
 
 public class openShop : MonoBehaviour, IInteractable
 {
     private Transform _player;
-    public GameObject _shop; 
+    public GameObject _shop;
+    public TMP_Text fishCount;
 
     public bool CanInteract()
     {
@@ -18,6 +20,9 @@ public class openShop : MonoBehaviour, IInteractable
     public void shop()
     {
         _shop.SetActive(true);
+        Time.timeScale = 0;
+        Cursor.visible = true;
+        fishCount.SetText(GameManager.instance.GetCurrency().ToString());
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

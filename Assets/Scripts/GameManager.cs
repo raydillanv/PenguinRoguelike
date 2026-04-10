@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int maxHealth = 100;
     public int health = 100;
     
+    
     public bool stage1Done = false;
     public bool stage2Done = false;
     public bool stage3Done = false;
