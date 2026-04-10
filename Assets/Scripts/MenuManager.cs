@@ -6,6 +6,7 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject settings;
+    public GameObject shop;
     private bool isPaused;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,22 +20,27 @@ public class MenuManager : MonoBehaviour
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            
-            if (settings.activeSelf)
+            if (shop != null && shop.activeSelf)
             {
+                shop.SetActive(false);
+                Resume();
+            } else if (settings.activeSelf)
+            { 
                 CloseSettings();
-            } else
-            {
+            }
+            else
+            { 
                 if (isPaused) 
-                {
+                { 
                     Resume();
                 }
                 else
-                {
+                { 
                     Pause();
                 }
-            
+
             }
+            
         }
     }
 
