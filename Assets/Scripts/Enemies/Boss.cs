@@ -1,19 +1,20 @@
 using Enemies.Projectiles;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 namespace Enemies
 {
     public class Boss : AbstractEnemy
     {
-    
-        public GameObject projectile;
+        
         public GameObject[] enemyPrefabs;
+        public GameObject projectilePrefab;
 
         public int projectileCount = 20;
         public int spawnCount = 6;
+        public float spawnCooldown;
 
-        public float attackCooldown = 3f;
-        public float spawnCooldown = 5f;
+       
 
         private float attackTimer;
         private float spawnTimer;
@@ -25,9 +26,13 @@ namespace Enemies
             maxHealth = 500f;
             moveSpeed = 2f;
             contactDamage = 15f;
+        
+            attackCooldown = 3f;
+            spawnCooldown = 5f;
 
             attackTimer = attackCooldown;
             spawnTimer = spawnCooldown;
+            
         }
 
         protected override void FixedUpdate()
@@ -78,7 +83,7 @@ namespace Enemies
 
                 Vector2 dir = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
 
-                GameObject proj = Instantiate(projectile, transform.position, Quaternion.identity);
+                GameObject proj = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
                 AbstractProjectile projScript = proj.GetComponent<AbstractProjectile>();
                 projScript.setDirection(dir);
             }

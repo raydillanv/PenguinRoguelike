@@ -109,9 +109,9 @@ TextureImporter:
         x: 55
         y: 38
         width: 40
-        height: 36
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: skele1_1
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 74
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad0281e5c23c2cff0800000000000000
-      internalID: -17236853231443750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dd1397a25d792414c8a57469cdf0e049
     internalID: 0
     vertices: []
     indices: 

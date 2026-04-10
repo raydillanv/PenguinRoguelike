@@ -6,7 +6,7 @@ namespace Enemies
     public class Shooter : AbstractEnemy
     {
         float targetDistance;
-        private new GameObject projectile;
+        private GameObject projectilePrefab;
 
         protected override void Start()
         {
@@ -36,7 +36,7 @@ namespace Enemies
             {
                 Vector2 shootDir = (player.transform.position - transform.position);
         
-                GameObject proj = Instantiate(projectile, transform.position, Quaternion.identity);
+                GameObject proj = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
                 ShooterProjectile projectileScript = proj.GetComponent<ShooterProjectile>();
                 projectileScript.setDirection(shootDir);
             }
