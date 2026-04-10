@@ -55,8 +55,10 @@ public class Sniper : AbstractEnemy
 
     protected override void HandleCollision(Collision2D collision)
     {
-        throw new System.NotImplementedException();
+        
     }
+    
+    
 }
 
 

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3089002291405135202}
   - component: {fileID: 2674213728650290342}
   - component: {fileID: 7895930324662326038}
-  - component: {fileID: 8961651681322462400}
   - component: {fileID: 6356284318917395930}
   - component: {fileID: 3842643103254135309}
+  - component: {fileID: -6511703871686247821}
   m_Layer: 0
   m_Name: Spooki Crystal Zombie
   m_TagString: Enemy
@@ -117,23 +117,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8961651681322462400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4173605675468509013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd8fc28b2c7742a09513ae5de79c7af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyBehavior
-  Player: {fileID: 0}
-  ChaseSpeed: 1
-  ReturnDistance: 1
-  Enemy: {fileID: 0}
-  Flee: 0
 --- !u!61 &6356284318917395930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -207,3 +190,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-6511703871686247821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173605675468509013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db6a7b71db40cf943a59bb8184bfe625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chaser
+  maxHealth: 0
+  moveSpeed: 0
+  contactDamage: 0
+  fishLoot: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
+  flee: 0
+  returnDistance: 0
