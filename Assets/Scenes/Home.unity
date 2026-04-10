@@ -673,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5036039737862106673, guid: 58f4f49bb359bca4185e8ae8dd4da301, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5198856866808965184, guid: 58f4f49bb359bca4185e8ae8dd4da301, type: 3}
       propertyPath: m_Camera
@@ -809,6 +809,14 @@ PrefabInstance:
       propertyPath: shop
       value: 
       objectReference: {fileID: 4397111906110333930}
+    - target: {fileID: 2147257271120294605, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147257271120294605, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2429403725985941932, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.81
@@ -847,6 +855,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2429403725985941932, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884777325662906215, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884777325662906215, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3166296592883739990, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
@@ -1008,6 +1024,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1786155884477475759, guid: 8496f9275a9c61445a10c3b4f1b0a4a3, type: 3}
       propertyPath: stage1Done
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786155884477475759, guid: 8496f9275a9c61445a10c3b4f1b0a4a3, type: 3}
+      propertyPath: stage2Done
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786155884477475759, guid: 8496f9275a9c61445a10c3b4f1b0a4a3, type: 3}
+      propertyPath: stage3Done
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2186455095426870675, guid: 8496f9275a9c61445a10c3b4f1b0a4a3, type: 3}
