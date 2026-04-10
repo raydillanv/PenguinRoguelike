@@ -1,44 +1,46 @@
 using Enemies;
-using Spells;
 using UnityEngine;
 
-public class HomingBall : Spell
+namespace Spells
 {
-    public float speed = 8f;
-    public float turnSpeed = 5f;
-    public float maxRange = 15f;
-
-    private Transform target;
-
-    public override void OnCast(SpellCaster caster)
+    public class HomingBall : Spell
     {
-        var instance = Instantiate(gameObject, caster.player.position, Quaternion.identity);
-        var spell = instance.GetComponent<HomingBall>();
-        spell.target = caster.FindNearestEnemy(spell.maxRange);
-        Destroy(instance, spell.lifetime);
-    }
+        public float speed = 8f;
+        public float turnSpeed = 5f;
+        public float maxRange = 15f;
 
-    private void Update()
-    {
-        if (!target)
+        private Transform target;
+
+        public override void OnCast(SpellCaster caster)
         {
-            transform.Translate(Vector3.up * (speed * Time.deltaTime));
-            return;
+            var instance = Instantiate(gameObject, caster.player.position, Quaternion.identity);
+            var spell = instance.GetComponent<HomingBall>();
+            spell.target = caster.FindNearestEnemy(spell.maxRange);
+            Destroy(instance, spell.lifetime);
         }
 
-        Vector2 dir = ((Vector2)target.position - (Vector2)transform.position).normalized;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), turnSpeed * Time.deltaTime);
-        transform.Translate(Vector3.up * (speed * Time.deltaTime));
-    }
+        private void Update()
+        {
+            if (!target)
+            {
+                transform.Translate(Vector3.up * (speed * Time.deltaTime));
+                return;
+            }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.CompareTag("Enemy")) return;
+            Vector2 dir = ((Vector2)target.position - (Vector2)transform.position).normalized;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), turnSpeed * Time.deltaTime);
+            transform.Translate(Vector3.up * (speed * Time.deltaTime));
+        }
 
-        var enemy = other.GetComponent<AbstractEnemy>();
-        if (enemy) enemy.TakeDamage(damage);
+        protected override void OnTriggerEnter2D(Collider2D other)
+        {
+            if (!other.CompareTag("Enemy")) return;
 
-        Destroy(gameObject);
+            var enemy = other.GetComponent<AbstractEnemy>();
+            if (enemy) enemy.TakeDamage(damage);
+
+            Destroy(gameObject);
+        }
     }
 }
