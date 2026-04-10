@@ -13,22 +13,17 @@ namespace Enemies
         [SerializeField] protected float currentCooldown;
 
         protected float currentHealth;
-        protected Transform player;
+        protected Transform player => GameManager.instance.player.transform;
         public GameObject fishLoot;
         [SerializeField] protected AbstractProjectile projectile;
+        protected Rigidbody2D rb;
     
         protected virtual void Start()
         {
             currentHealth = maxHealth;
-            GameObject playerObject = GameObject.FindWithTag("Player");
-            if (playerObject != null)
-            {
-                player = playerObject.transform;
-            }
-        
         }
 
-        protected virtual void Update()
+        protected virtual void FixedUpdate()
         {
             move();
             if (currentCooldown <= 0)
@@ -37,7 +32,7 @@ namespace Enemies
                 currentCooldown = attackCooldown;
             }
             currentCooldown -= Time.deltaTime;
-        
+            
         }
 
         public virtual void TakeDamage(float damage)
@@ -59,7 +54,7 @@ namespace Enemies
         
             GameManager.instance.AddKillCount(1);
         }
-    
+
         protected abstract void move();
         protected abstract void attack();
 

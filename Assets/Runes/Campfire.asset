@@ -10,15 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b324f571fa30419e84b6e12343f507ad, type: 3}
-  m_Name: Ridiculous
+  m_Name: Campfire
   m_EditorClassIdentifier: Assembly-CSharp::Runes.Rune
   directions:
-  - {x: -1, y: 0}
-  - {x: 0, y: -1}
-  - {x: 0.70710677, y: 0.70710677}
-  - {x: 0, y: 1}
-  - {x: -1, y: 0}
   - {x: -0.70710677, y: -0.70710677}
-  - {x: 0, y: 1}
-  runePrefab: {fileID: 4295520514417224921, guid: 2e06dc0bd12614135b5089d19da608ec, type: 3}
-  cooldown: 5
+  - {x: -1, y: 0}
+  - {x: 0.70710677, y: 0.70710677}
+  runePrefab: {fileID: 3300299787576391534, guid: 28a2b935af5f14097ab5a0a2116b1755, type: 3}
+  cooldown: 3.5

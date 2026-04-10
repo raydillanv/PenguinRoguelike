@@ -44,11 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f502e567d37a4f26bc6dfddd773c39d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Runes.RuneSystem
-  playerReference: {fileID: 0}
+  spellCasterReference: {fileID: 0}
   runes:
   - {fileID: 11400000, guid: 885b46bd732f94522a463b7f60ee1209, type: 2}
   - {fileID: 11400000, guid: 3ddfeb4c1a36f4c7cab2fbade983812c, type: 2}
   - {fileID: 11400000, guid: c4eb32d033d9846898b0e34ded6ce257, type: 2}
   - {fileID: 11400000, guid: a2c0afa011d68400a911bafbe9936db6, type: 2}
+  - {fileID: 11400000, guid: 9bb6f0ddbbbc1479bb33c554fee7f40d, type: 2}
   matchThreshold: 0.85
   debug: 0
