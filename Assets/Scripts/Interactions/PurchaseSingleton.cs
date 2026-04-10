@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class ItemPersistence : MonoBehaviour
+public class PurchaseSingleton : MonoBehaviour
 {
-    public static ItemPersistence instance;
+    public static PurchaseSingleton instance;
 
     public bool upgradeBought1;
 
@@ -32,7 +32,5 @@ public class ItemPersistence : MonoBehaviour
         else Destroy(gameObject);
         
     }
-
-
     
 }

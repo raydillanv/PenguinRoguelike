@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class openGame : MonoBehaviour
+public class MiscFunctions : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,5 +19,11 @@ public class openGame : MonoBehaviour
         Cursor.visible = false;
         SceneManager.LoadScene("Home");
         GameManager.instance.RefreshPlayerReference();
+    }
+
+    public void ResumeOnExitUI()
+    {
+        Cursor.visible = false;
+        Time.timeScale = 1;
     }
 }
