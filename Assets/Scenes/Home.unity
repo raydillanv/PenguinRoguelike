@@ -1202,6 +1202,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5238133117121898441, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
   m_PrefabInstance: {fileID: 7053229241214199129}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1696788090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3240725429629093763, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
+  m_PrefabInstance: {fileID: 7053229241214199129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2060689602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,6 +1732,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 745018630922647130, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 1696788090}
     - target: {fileID: 1371193301931169417, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1097

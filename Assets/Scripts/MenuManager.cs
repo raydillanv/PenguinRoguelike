@@ -5,8 +5,9 @@ using System.Collections;
 public class MenuManager : MonoBehaviour
 {
     public GameObject pauseMenu;
-
+    public GameObject settings;
     private bool isPaused;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,13 +19,21 @@ public class MenuManager : MonoBehaviour
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (isPaused)
+            
+            if (settings.activeSelf)
             {
-                Resume();
-            }
-            else
+                CloseSettings();
+            } else
             {
-                Pause();
+                if (isPaused) 
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
+            
             }
         }
     }
@@ -34,7 +43,6 @@ public class MenuManager : MonoBehaviour
         isPaused = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-
         Cursor.visible = true;
     }
     public void Resume()
@@ -42,28 +50,30 @@ public class MenuManager : MonoBehaviour
         isPaused = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        
         Cursor.visible = false;
     }
     
-
-    public void playButton()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Home");
-        GameManager.instance.RefreshPlayerReference();
-    }
-
+    
+    
+    //Stages back to Title Screen
     public void quit()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Start Menu");
     }
-    public void exitGeneralUI()
+
+    public void OpenSettings()
     {
-        Cursor.visible = false;
-        Time.timeScale = 1f;
+        pauseMenu.SetActive(false);
+        settings.SetActive(true);
     }
+
+    public void CloseSettings()
+    {
+        settings.SetActive(false);
+        pauseMenu.SetActive(true);
+    }
+    
     public void restartLvl()
     {
         Time.timeScale = 1f;
