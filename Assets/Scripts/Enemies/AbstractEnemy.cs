@@ -13,7 +13,11 @@ namespace Enemies
         [SerializeField] protected float currentCooldown;
 
         protected float currentHealth;
-        protected Transform player => GameManager.instance.player.transform;
+        protected Transform player { get {
+                if (!GameManager.instance) return null;
+                if (!GameManager.instance.player) return null;
+                return GameManager.instance.player.transform;
+            } }
         public GameObject fishLoot;
         [SerializeField] protected AbstractProjectile projectile;
         protected Rigidbody2D rb;
