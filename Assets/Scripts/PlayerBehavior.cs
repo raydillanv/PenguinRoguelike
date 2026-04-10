@@ -92,15 +92,6 @@ public class PlayerBehavior : MonoBehaviour
         if (drawPath) _pathDirections.Add(direction);
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        foreach (var contact in collision.contacts)
-        {
-            Vector2 push = contact.normal * Mathf.Abs(contact.separation);
-            transform.position += (Vector3)push;
-        }
-    }
-
     private void OnDrawGizmos()
     {
         if (!drawPath || _pathDirections.Count < 2) return;
