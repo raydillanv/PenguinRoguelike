@@ -8,6 +8,9 @@ public class TextReader : MonoBehaviour
     //public TextAsset textFileToParse;
     private DialogueController _dialogueController;
 
+    public SFXPlayer player;
+    public AudioClip passSound;
+
     private List<string> _lines = new List<string>();
     private int _currentLine = 0;
     private string _speaker;
@@ -30,6 +33,8 @@ public class TextReader : MonoBehaviour
             NoMoreLines = true;
             return;
         }
+
+        player.PlaySFX(passSound);
 
         string line = _lines[_currentLine];
         string[] parts = line.Split(new[] { ':' }, 2);
