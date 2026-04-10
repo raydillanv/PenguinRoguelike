@@ -4,6 +4,8 @@ using System.Collections;
 public class Intro : MonoBehaviour
 {
     public Dialogue IntroDialogue;
+    public TextReader textReader;
+    public GameObject IntroUI;
 
     void Start()
     {
@@ -20,7 +22,12 @@ public class Intro : MonoBehaviour
         while (true)
         {
             
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(3f);
+            if (textReader.NoMoreLines)
+            {
+                IntroUI.SetActive(false);
+                yield break;
+            }
             IntroDialogue.HandleDialogue();
         }
     }
