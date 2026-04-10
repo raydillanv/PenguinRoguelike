@@ -6,6 +6,7 @@ public class Chest : MonoBehaviour, IInteractable
     public GameObject itemPrefab;
     public GameObject OpenChestGameRef;
     public GameObject ClosedChestRef;
+    public int Amount = 1;
 
     public bool CanInteract()
     {
@@ -19,8 +20,11 @@ public class Chest : MonoBehaviour, IInteractable
 
     public void OpenChest()
     {
-        // Instantiate the item at the chest's position
-        Instantiate(itemPrefab, transform.position, Quaternion.identity);
+        // Instantiate items at the chest's position
+        for (int i = 0; i < Amount; i++)
+        {
+            Instantiate(itemPrefab, transform.position, Quaternion.identity);
+        }
 
         // Swap chest visuals
         ClosedChestRef.SetActive(false);
@@ -29,10 +33,8 @@ public class Chest : MonoBehaviour, IInteractable
         print("Opened chest!");
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    
 }
