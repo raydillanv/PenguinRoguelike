@@ -7,15 +7,21 @@ public class PlayerBehavior : MonoBehaviour
 {
     [Header("Rune Detection")]
     public RuneSystem runeSystem;
-    
+
     private Vector2 _input;
     private Vector2 _lastInputDirection;
     private float _sendTime;
     private List<Vector2> _pathDirections = new List<Vector2>();
     private Rigidbody2D _rb;
-    
+    private Animator _animator;
+
     public Vector2 Velocity => _input.normalized * GameManager.instance.moveSpeed;
-    private void Awake() => _rb = GetComponent<Rigidbody2D>();
+
+    private void Awake()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+    }
 
     private void Start()
     {
@@ -33,12 +39,37 @@ public class PlayerBehavior : MonoBehaviour
             _sendTime = 0;
         }
     }
-    
+
     public void OnMove(InputAction.CallbackContext context)
     {
         _input = context.ReadValue<Vector2>();
+
         if (context.performed && _input.sqrMagnitude > 0.001f)
+        {
             _sendTime = Time.time + 0.05f;
+            TriggerDirectionAnimation(_input);
+        }
+    }
+
+    private void TriggerDirectionAnimation(Vector2 input)
+    {
+        if (_animator == null) return;
+
+        // Determine dominant axis
+        if (Mathf.Abs(input.x) >= Mathf.Abs(input.y))
+        {
+            if (input.x > 0)
+                _animator.SetTrigger("Right");
+            else
+                _animator.SetTrigger("Left");
+        }
+        else
+        {
+            if (input.y > 0)
+                _animator.SetTrigger("Up");
+            else
+                _animator.SetTrigger("Down");
+        }
     }
 
     private void SendDirection(Vector2 direction)
