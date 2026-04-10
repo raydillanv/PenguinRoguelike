@@ -41,10 +41,12 @@ namespace Enemies
 
         protected override void attack()
         {
+            if (!projectile) return;
+
             Vector2 predictShot = (Vector2)player.transform.position + (_playerScript.Velocity * .25f);
-        
+
             Vector2 shootDir = predictShot - (Vector2) transform.position;
-        
+
             AbstractProjectile proj = Instantiate(projectile, transform.position, Quaternion.identity);
             SniperProjectile projectileScript = proj.GetComponent<SniperProjectile>();
             projectileScript.setDirection(shootDir);

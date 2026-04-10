@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         mana = maxMana;
         _currentStage = SceneManager.GetActiveScene().name;
         RefreshPlayerReference();
-        uiManager.RefreshValues();
+        if (uiManager) uiManager.RefreshValues();
     }
 
     public void FixedUpdate()
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         DroppedLoot.OnCurrencyLooted += HandleOnCurrencyLooted;
         DroppedLootHeal.OnHealLooted += HandleOnHealLooted;
         DroppedLootMana.OnManaLooted += HandleOnManaLooted;
-        
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDisable()
@@ -71,6 +71,14 @@ public class GameManager : MonoBehaviour
         DroppedLoot.OnCurrencyLooted -= HandleOnCurrencyLooted;
         DroppedLootHeal.OnHealLooted -= HandleOnHealLooted;
         DroppedLootMana.OnManaLooted -= HandleOnManaLooted;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        _currentStage = scene.name;
+        RefreshPlayerReference();
+        if (uiManager) uiManager.RefreshValues();
     }
 
     public void VisitStage(string stage)
@@ -153,8 +161,6 @@ public class GameManager : MonoBehaviour
     {
         ResetCharacter();
         SceneManager.LoadScene(_currentStage);
-        RefreshPlayerReference();
-        uiManager.RefreshValues();
     }
 
     // listeners for events
