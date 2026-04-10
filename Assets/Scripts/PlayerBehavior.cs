@@ -1,39 +1,47 @@
+using System;
 using System.Collections.Generic;
+using Runes;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    [Header("Movement")]
-    public float moveSpeed = 5f;
+    [Header("Stats")]
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float maxMana = 100f;
+    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private float manaRegen = 5f;
 
+    
     [Header("Rune Detection")]
     public Runes.RuneSystem runeSystem;
 
     [Header("Debug")]
     public bool drawPath;
 
-    private float _health;
-    private float _mana;
-    private float _manaRegen;
+    private float _currentHealth;
+    private float _currentMana;
     
     private Vector2 _input;
     private Vector2 _lastInputDirection;
     private float _sendTime;
     private List<Vector2> _pathDirections = new List<Vector2>();
+    private Rigidbody2D _rb;
 
     public Vector2 Velocity => _input.normalized * moveSpeed;
+    private void Awake() => _rb = GetComponent<Rigidbody2D>();
 
     private void Start()
     {
-        _health = 100f;
-        _mana = _health;
+        _currentHealth = maxHealth;
+        _currentMana = maxMana;
+        runeSystem ??= GameObject.FindGameObjectWithTag("RuneSystem").GetComponent<RuneSystem>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (_input != Vector2.zero)
-            transform.position += (Vector3)(_input.normalized * (moveSpeed * Time.deltaTime));
+            _rb.MovePosition(_rb.position + _input.normalized * (moveSpeed * Time.deltaTime));
 
         if (_sendTime > 0 && Time.time >= _sendTime)
         {
@@ -41,25 +49,27 @@ public class PlayerBehavior : MonoBehaviour
             _sendTime = 0;
         }
 
-        if (_mana < 100f)
-        {
-            _mana += _manaRegen;
-        }
-        
+        if (_currentMana < maxMana)
+            _currentMana = Mathf.Min(_currentMana + Mathf.Ceil(manaRegen), maxMana);
     }
 
     public void takeDamage(float damage)
     {
-        _health -= damage;
-        if (_health <= 0)
+        _currentHealth -= damage;
+        if (_currentHealth <= 0)
         {
             die();
         }
     }
 
-    public void upgradeHealth(float newHealth)
+    public void AddToHealth(float value)
     {
-        _health = newHealth;
+        maxHealth += value;
+    }
+
+    public void RestoreHealth(float value)
+    {
+        _currentHealth = Mathf.Min(_currentHealth + Mathf.Ceil(value), maxHealth);
     }
 
     private void die()

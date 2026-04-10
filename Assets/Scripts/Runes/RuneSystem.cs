@@ -11,15 +11,44 @@ namespace Runes
 
         public List<Rune> runes = new List<Rune>();
         private Dictionary<Rune, int> activeMatches = new Dictionary<Rune, int>();
+        private Dictionary<Rune, float> cooldowns = new Dictionary<Rune, float>();
         private List<Rune> unactiveRunes = new List<Rune>();
 
+        public IReadOnlyDictionary<Rune, int> ActiveMatches => activeMatches;
+        public IReadOnlyDictionary<Rune, float> Cooldowns => cooldowns;
         public float matchThreshold = 0.85f;
         public bool debug;
 
         public void Start()
         {
             activeMatches = new Dictionary<Rune, int>();
+            cooldowns = new Dictionary<Rune, float>();
             unactiveRunes = new List<Rune>(runes);
+            
+            if (!playerReference) playerReference = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        public float GetCooldownProgress(Rune rune)
+        {
+            if (!cooldowns.TryGetValue(rune, out float castTime)) return 1f;
+            float elapsed = Time.time - castTime;
+            if (elapsed >= rune.cooldown)
+            {
+                cooldowns.Remove(rune);
+                return 1f;
+            }
+            return elapsed / rune.cooldown;
+        }
+
+        public bool IsOnCooldown(Rune rune)
+        {
+            if (!cooldowns.TryGetValue(rune, out float castTime)) return false;
+            if (Time.time - castTime >= rune.cooldown)
+            {
+                cooldowns.Remove(rune);
+                return false;
+            }
+            return true;
         }
 
         public void NextDirection(Vector2 direction)
@@ -69,9 +98,9 @@ namespace Runes
                 unactiveRunes.Add(rune);
             }
 
-            // Handle new direction matches
+            // Handle new direction matches (skip runes on cooldown)
             var newRunes = new List<Rune>();
-            foreach (var rune in unactiveRunes.Where(rune => Vector2.Dot(direction, rune.Vectors[0]) >= matchThreshold))
+            foreach (var rune in unactiveRunes.Where(rune => !IsOnCooldown(rune) && Vector2.Dot(direction, rune.Vectors[0]) >= matchThreshold))
             {
                 activeMatches[rune] = 1;
                 if (debug) Debug.Log($"[Rune] Started: {rune.name}");
@@ -85,6 +114,8 @@ namespace Runes
         private void OnRuneComplete(Rune rune)
         {
             Debug.Log($"Rune matched: {rune.name}");
+            cooldowns[rune] = Time.time;
+            
             if (rune.runePrefab && playerReference)
                 Instantiate(rune.runePrefab, playerReference.transform.position, Quaternion.identity);
         }

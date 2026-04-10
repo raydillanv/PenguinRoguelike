@@ -19,6 +19,8 @@ public class SpellCaster : MonoBehaviour
 
         foreach (var enemy in enemies)
         {
+            if (!enemy) continue;
+            
             float dist = Vector2.Distance(Player.position, enemy.transform.position);
             if (dist < minDist)
             {

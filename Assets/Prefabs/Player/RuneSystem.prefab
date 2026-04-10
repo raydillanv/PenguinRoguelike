@@ -9,11 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7689554864268963618}
-  - component: {fileID: 1118764955483826593}
   - component: {fileID: 8279173676412084249}
   m_Layer: 0
   m_Name: RuneSystem
-  m_TagString: Untagged
+  m_TagString: RuneSystem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,18 +32,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1118764955483826593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5388015178124766512}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27167ea91af93d140b1804417b08019a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpellCaster
 --- !u!114 &8279173676412084249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,5 +47,8 @@ MonoBehaviour:
   playerReference: {fileID: 0}
   runes:
   - {fileID: 11400000, guid: 885b46bd732f94522a463b7f60ee1209, type: 2}
+  - {fileID: 11400000, guid: 3ddfeb4c1a36f4c7cab2fbade983812c, type: 2}
+  - {fileID: 11400000, guid: c4eb32d033d9846898b0e34ded6ce257, type: 2}
+  - {fileID: 11400000, guid: a2c0afa011d68400a911bafbe9936db6, type: 2}
   matchThreshold: 0.85
   debug: 1

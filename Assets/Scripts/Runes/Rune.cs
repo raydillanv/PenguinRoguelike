@@ -8,6 +8,7 @@ namespace Runes
     {
         public List<Vector2> directions = new List<Vector2>();
         public GameObject runePrefab;
+        public float cooldown = 1f;
 
         public int Size => directions.Count;
         public Vector2[] Vectors => directions.ToArray();
