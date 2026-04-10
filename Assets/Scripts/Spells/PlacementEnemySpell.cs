@@ -6,6 +6,16 @@ namespace Spells
     {
         public float damage = 20f;
         public float lifetime = 2f;
+        public bool useAnimatorLength = true;
+
+        private void OnValidate()
+        {
+            if (useAnimatorLength && TryGetComponent<Animator>(out var animator) && animator.runtimeAnimatorController)
+            {
+                var clips = animator.runtimeAnimatorController.animationClips;
+                if (clips.Length > 0) lifetime = clips[0].length;
+            }
+        }
 
         public override void Cast(SpellCaster caster)
         {
@@ -13,7 +23,16 @@ namespace Spells
             if (!enemy) return;
 
             var instance = Instantiate(gameObject, enemy.position, Quaternion.identity);
-            Destroy(instance, lifetime);
+            var spell = instance.GetComponent<PlacementEnemySpell>();
+
+            float duration = spell.lifetime;
+            if (spell.useAnimatorLength && instance.TryGetComponent<Animator>(out var animator))
+            {
+                Debug.Log($"State info: {animator.GetCurrentAnimatorStateInfo(0)}");
+                duration = animator.GetCurrentAnimatorStateInfo(0).length;
+            }
+
+        Destroy(instance, duration);
         }
     }
 }

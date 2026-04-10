@@ -30,7 +30,7 @@ namespace Enemies
             spawnTimer = spawnCooldown;
         }
 
-        protected override void Update()
+        protected override void FixedUpdate()
         {
             attackTimer -= Time.deltaTime;
             spawnTimer -= Time.deltaTime;
