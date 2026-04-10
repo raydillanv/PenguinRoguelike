@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        isPaused = false;
+        Resume();
     }
 
     // Update is called once per frame
@@ -18,52 +18,54 @@ public class MenuManager : MonoBehaviour
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (!isPaused)
+            if (isPaused)
             {
-                pause();
-                isPaused = true;
-                Cursor.visible = true;
+                Resume();
             }
             else
             {
-                resume();
-                exitGeneralUI();
+                Pause();
             }
         }
     }
 
-    public void pause()
+    public void Pause()
     {
+        isPaused = true;
         pauseMenu.SetActive(true);
-        Time.timeScale = 0;
+        Time.timeScale = 0f;
+
+        Cursor.visible = true;
     }
-    public void resume()
+    public void Resume()
     {
+        isPaused = false;
         pauseMenu.SetActive(false);
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
+        
+        Cursor.visible = false;
     }
     
 
     public void playButton()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Home");
-        exitGeneralUI();
     }
 
     public void quit()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Start Menu");
-        Time.timeScale = 1;
-        Cursor.visible = true;
     }
     public void exitGeneralUI()
     {
         Cursor.visible = false;
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
     }
     public void restartLvl()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        exitGeneralUI();
     }
 }
