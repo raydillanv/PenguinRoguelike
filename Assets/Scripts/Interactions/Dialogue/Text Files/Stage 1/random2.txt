@@ -1,4 +1,4 @@
-NPC: You ever meet my aunt?
-Main Character: No. What's her name?
-NPC: Aunt-Artica..
-Main Character: ..
+Penguin: You ever meet my aunt?
+Lucien: No. What's her name?
+Penguin: Aunt-Artica..
+Lucien: ..
