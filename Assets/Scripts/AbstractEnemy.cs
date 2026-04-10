@@ -28,7 +28,7 @@ public abstract class AbstractEnemy : MonoBehaviour
     protected virtual void Update()
     {
         move();
-        if (currentCooldown == 0)
+        if (currentCooldown <= 0)
         {
             attack();
             currentCooldown = attackCooldown;

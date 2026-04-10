@@ -20,6 +20,8 @@ public class Sniper : AbstractEnemy
         
         _playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
         attackCooldown = 2f;
+        orbit = 5f;
+        orbitSpeed = 1f;
     }
     
 
@@ -47,7 +49,10 @@ public class Sniper : AbstractEnemy
 
     protected override void HandleCollision(Collision2D collision)
     {
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<PlayerBehavior>().takeDamage(contactDamage);
+        }
     }
     
     
