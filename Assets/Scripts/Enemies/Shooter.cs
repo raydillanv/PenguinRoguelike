@@ -5,7 +5,7 @@ namespace Enemies
 {
     public class Shooter : AbstractEnemy
     {
-        float targetDistance;
+        public float targetDistance;
 
         protected override void move()
         {
