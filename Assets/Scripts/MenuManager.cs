@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     public GameObject settings;
     public GameObject shop;
     private bool isPaused;
+    public GameObject controlPanel;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +40,23 @@ public class MenuManager : MonoBehaviour
                     Pause();
                 }
 
+            }
+
+            if (Keyboard.current.tabKey.wasPressedThisFrame)
+            {
+                if (!pauseMenu.activeSelf || !settings.activeSelf || (shop != null && !shop.activeSelf))
+                {
+                    if (controlPanel.activeSelf)
+                    {
+                        controlPanel.SetActive(false);
+                        Time.timeScale = 1f;
+                    }
+                    else
+                    {
+                        controlPanel.SetActive(true);
+                        Time.timeScale = 0f;
+                    }
+                }
             }
             
         }
