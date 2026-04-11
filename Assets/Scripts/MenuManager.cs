@@ -41,24 +41,23 @@ public class MenuManager : MonoBehaviour
                 }
 
             }
-
-            if (Keyboard.current.tabKey.wasPressedThisFrame)
+            
+        }
+        if (Keyboard.current.tabKey.wasPressedThisFrame)
+        {
+            if (!pauseMenu.activeSelf || !settings.activeSelf || (shop == null || !shop.activeSelf))
             {
-                if (!pauseMenu.activeSelf || !settings.activeSelf || (shop != null && !shop.activeSelf))
+                if (controlPanel.activeSelf)
                 {
-                    if (controlPanel.activeSelf)
-                    {
-                        controlPanel.SetActive(false);
-                        Time.timeScale = 1f;
-                    }
-                    else
-                    {
-                        controlPanel.SetActive(true);
-                        Time.timeScale = 0f;
-                    }
+                    controlPanel.SetActive(false);
+                    Time.timeScale = 1f;
+                }
+                else
+                {
+                    controlPanel.SetActive(true);
+                    Time.timeScale = 0f;
                 }
             }
-            
         }
     }
 
