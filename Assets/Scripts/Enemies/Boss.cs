@@ -31,6 +31,11 @@ namespace Enemies
             
             attackTimer -= Time.deltaTime;
             spawnTimer -= Time.deltaTime;
+
+            if (currentHealth <= 0f)
+            {
+                GameObject.FindGameObjectWithTag("Credits").SetActive(true);
+            }
         }
 
         protected override void move()
