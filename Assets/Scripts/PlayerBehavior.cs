@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Runes;
 using UnityEngine;
@@ -38,7 +39,11 @@ public class PlayerBehavior : MonoBehaviour
             SendDirection(_input.normalized);
             _sendTime = 0;
         }
+        
+        
     }
+
+    
 
     public void OnMove(InputAction.CallbackContext context)
     {

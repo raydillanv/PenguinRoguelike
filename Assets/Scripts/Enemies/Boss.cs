@@ -12,27 +12,8 @@ namespace Enemies
         public int projectileCount = 20;
         public int spawnCount = 6;
         public float spawnCooldown;
-
-       
-
         private float attackTimer;
         private float spawnTimer;
-
-        protected override void Start()
-        {
-            base.Start();
-
-            maxHealth = 500f;
-            moveSpeed = 1f;
-            contactDamage = 15f;
-        
-            attackCooldown = 3f;
-            spawnCooldown = 5f;
-
-            attackTimer = attackCooldown;
-            spawnTimer = spawnCooldown;
-            
-        }
 
         protected override void FixedUpdate()
         {

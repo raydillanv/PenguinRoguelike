@@ -29,9 +29,9 @@ namespace Enemies.Projectiles
     
         protected abstract void move();
     
-        protected virtual void OnCollisionEnter2D(Collision2D collision)
+        protected virtual void OnTriggerEnter2D(Collider2D collision)
         {
-            GameManager.instance.TakeDamage(damage);
+            if(collision.gameObject.CompareTag("Player")) GameManager.instance.TakeDamage(damage);
         }
     }
 }

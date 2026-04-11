@@ -7,18 +7,6 @@ namespace Enemies
     {
         float targetDistance;
 
-        protected override void Start()
-        {
-            base.Start();
-        
-            maxHealth = 50f;
-            moveSpeed = 5f;
-            contactDamage = 5f;
-            targetDistance = 15f;
-            attackCooldown = 0.5f;
-        }
-    
-
         protected override void move()
         {
             float distance = Vector2.Distance(transform.position, player.position);

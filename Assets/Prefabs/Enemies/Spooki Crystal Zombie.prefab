@@ -202,9 +202,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6a7b71db40cf943a59bb8184bfe625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Chaser
-  maxHealth: 0
-  moveSpeed: 0
-  contactDamage: 0
+  maxHealth: 30
+  moveSpeed: 0.75
+  contactDamage: 12
+  attackCooldown: 0
+  currentCooldown: 0
   fishLoot: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
+  projectile: {fileID: 0}
   flee: 0
-  returnDistance: 0
+  returnDistance: 4
