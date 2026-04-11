@@ -37,7 +37,6 @@ namespace Enemies
                 currentCooldown = attackCooldown;
             }
             currentCooldown -= Time.deltaTime;
-            
         }
 
         public virtual void TakeDamage(float damage)

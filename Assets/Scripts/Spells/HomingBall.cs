@@ -8,6 +8,7 @@ namespace Spells
         public float speed = 8f;
         public float turnSpeed = 5f;
         public float maxRange = 15f;
+        public bool straight = false;
 
         private Transform target;
 
@@ -16,12 +17,18 @@ namespace Spells
             var instance = Instantiate(gameObject, caster.player.position, Quaternion.identity);
             var spell = instance.GetComponent<HomingBall>();
             spell.target = caster.FindNearestEnemy(spell.maxRange);
+            if (spell.straight && spell.target)
+            {
+                Vector2 dir = ((Vector2)spell.target.position - (Vector2)instance.transform.position).normalized;
+                float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
+                instance.transform.rotation = Quaternion.Euler(0, 0, angle);
+            }
             Destroy(instance, spell.lifetime);
         }
 
         private void Update()
         {
-            if (!target)
+            if (!target || straight)
             {
                 transform.Translate(Vector3.up * (speed * Time.deltaTime));
                 return;
