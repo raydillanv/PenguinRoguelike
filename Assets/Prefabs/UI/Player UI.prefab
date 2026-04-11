@@ -1898,7 +1898,7 @@ PrefabInstance:
     - target: {fileID: 745018630922647130, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
       propertyPath: shop
       value: 
-      objectReference: {fileID: 6184595432899171139}
+      objectReference: {fileID: 0}
     - target: {fileID: 2029970893740300692, guid: 2fc4c1dccf0806c49953c9f3fcfcd178, type: 3}
       propertyPath: m_Name
       value: MenuUI
