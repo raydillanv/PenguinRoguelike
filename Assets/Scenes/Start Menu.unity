@@ -2093,7 +2093,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4015603459429744522, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015603459429744522, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015603459429744522, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
+      propertyPath: m_MinValue
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 4833181896342410541, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
       propertyPath: m_LocalScale.x
@@ -2113,7 +2121,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4898547289796111385, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898547289796111385, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898547289796111385, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
+      propertyPath: m_MinValue
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 5010920723998860063, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
       propertyPath: m_Pivot.x
@@ -2329,7 +2345,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170323283209375051, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170323283209375051, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170323283209375051, guid: 563b355983e484f4ab3695ebe764b318, type: 3}
+      propertyPath: m_MinValue
+      value: -80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
