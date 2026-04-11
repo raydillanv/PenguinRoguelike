@@ -164,6 +164,177 @@ Transform:
   - {fileID: 2051484926}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &98752651
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.2252803
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.3370357
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &119060323
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.90685
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.451564
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &157900816
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.345362
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.243462
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
 --- !u!1001 &184457837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -225,6 +396,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a68dd12d265354789a4adb165e7bc099, type: 3}
+--- !u!1001 &185190190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.310453
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9613414
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
 --- !u!1001 &272527198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -286,6 +514,120 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a68dd12d265354789a4adb165e7bc099, type: 3}
+--- !u!1001 &305657629
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.7390656
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.916097
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643861688964350280, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_Name
+      value: Spooki Crystal Zombie Variant 1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+--- !u!1001 &325508386
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.25319
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.3384356
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
 --- !u!20 &519420031 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 5981587103694041066, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
@@ -489,6 +831,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0b096e5459dd63419450f66d343e09a, type: 3}
+--- !u!1001 &707709509
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.764366
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.5255823
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
 --- !u!1001 &723026324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -546,6 +945,234 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e245e2e8f3307492b97bd9431dc21f8f, type: 3}
+--- !u!1001 &786559120
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1512613
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2239075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &818025371
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9542294
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.61691
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643861688964350280, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_Name
+      value: Spooki Crystal Zombie Variant 1 (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+--- !u!1001 &869684717
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.38251328
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.067734
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643861688964350280, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_Name
+      value: Spooki Crystal Zombie Variant 1 (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+--- !u!1001 &888003193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.915203
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3957
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
 --- !u!1001 &902104963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -630,6 +1257,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27167ea91af93d140b1804417b08019a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellCaster
+--- !u!1001 &940246147
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5443969
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.725513
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643861688964350280, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_Name
+      value: Spooki Crystal Zombie Variant 1 (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
 --- !u!1001 &958999804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -698,6 +1382,10 @@ PrefabInstance:
     - target: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
       propertyPath: m_Name
       value: Fish Loot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 873068084045270473, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
       propertyPath: m_LocalPosition.x
@@ -823,6 +1511,462 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1122842791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.578619
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.243462
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &1252404943
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.78112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.638711
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &1327750590
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.708502
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.904077
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &1374544248
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.950113
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2239075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &1384533451
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1399273766545095527, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_Name
+      value: Pink Whisp Variant 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.597677
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.571835
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+--- !u!1001 &1407981859
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.17637
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.8482132
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &1409155915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1399273766545095527, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_Name
+      value: Pink Whisp Variant 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.8046365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.1742935
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+--- !u!1001 &1451705363
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3398085
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.2253075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
 --- !u!1001 &1485546926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1028,6 +2172,120 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+--- !u!1001 &1749895639
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.043688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5465376
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &1812003200
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.1317065
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.486473
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
 --- !u!1001 &1858978350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1150,6 +2408,120 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a68dd12d265354789a4adb165e7bc099, type: 3}
+--- !u!1001 &1928910532
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.974724
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.659943
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694320183062352767, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643861688964350280, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+      propertyPath: m_Name
+      value: Spooki Crystal Zombie Variant 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5236edf8c95e07e429a9486a50b5eb31, type: 3}
+--- !u!1001 &1992705300
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.536709
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2616167
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
 --- !u!1 &2051484925
 GameObject:
   m_ObjectHideFlags: 0
@@ -6952,6 +8324,120 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1001 &2083909752
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.898449
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.168043
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494852941662091489, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674395452374453157, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+      propertyPath: m_Name
+      value: Crystal Zombie Variant 1 (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abb40a589d6bb7e4c81e3c7768938e8c, type: 3}
+--- !u!1001 &2119997750
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1399273766545095527, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_Name
+      value: Pink Whisp Variant 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1038222
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.743966
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934148749369560390, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1dddab53eae3194a8f870849b4ef4ac, type: 3}
 --- !u!1001 &2814330448001003095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6963,6 +8449,10 @@ PrefabInstance:
     - target: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
       propertyPath: m_Name
       value: Fish Loot
+      objectReference: {fileID: 0}
+    - target: {fileID: 32178787795159066, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 873068084045270473, guid: aac4302c7e5518c46817f031670a4d19, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7125,6 +8615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 685030173852735300, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2114724231856521014, guid: fb8de1d5d97c0c14cb2e3f8d19a42621, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.95
@@ -7255,3 +8749,29 @@ SceneRoots:
   - {fileID: 958999804}
   - {fileID: 1858978350}
   - {fileID: 184457837}
+  - {fileID: 1812003200}
+  - {fileID: 786559120}
+  - {fileID: 98752651}
+  - {fileID: 1451705363}
+  - {fileID: 119060323}
+  - {fileID: 1122842791}
+  - {fileID: 2083909752}
+  - {fileID: 1327750590}
+  - {fileID: 185190190}
+  - {fileID: 1374544248}
+  - {fileID: 1407981859}
+  - {fileID: 1992705300}
+  - {fileID: 888003193}
+  - {fileID: 1749895639}
+  - {fileID: 325508386}
+  - {fileID: 157900816}
+  - {fileID: 707709509}
+  - {fileID: 1252404943}
+  - {fileID: 2119997750}
+  - {fileID: 1409155915}
+  - {fileID: 1384533451}
+  - {fileID: 1928910532}
+  - {fileID: 305657629}
+  - {fileID: 869684717}
+  - {fileID: 818025371}
+  - {fileID: 940246147}
