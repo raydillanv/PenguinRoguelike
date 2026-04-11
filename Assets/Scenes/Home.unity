@@ -760,6 +760,10 @@ PrefabInstance:
       propertyPath: m_MinValue
       value: -80
       objectReference: {fileID: 0}
+    - target: {fileID: 1374782150299767519, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
+      propertyPath: shop
+      value: 
+      objectReference: {fileID: 4397111906110333930}
     - target: {fileID: 2147257271120294605, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
