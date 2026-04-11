@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43afbf1d4d70e4431b9e5d994d46276c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spells.PlacementEnemySpell
-  damage: 20
+  manaCost: 20
+  damage: 40
   lifetime: 1.0833334
   useAnimatorLength: 1

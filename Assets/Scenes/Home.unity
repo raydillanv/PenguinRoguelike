@@ -119,38 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &168629571
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 168629572}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &168629572
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168629571}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.69, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 902104964}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &220307959 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7546850838782435146, guid: 2e30c65f02deddb4fafdf29c7e098ee4, type: 3}
@@ -268,7 +236,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 168629572}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 496695397155226348, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -276,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 496695397155226348, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.69
       objectReference: {fileID: 0}
     - target: {fileID: 496695397155226348, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -323,11 +291,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
---- !u!4 &902104964 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 496695397155226348, guid: 221437a23d369504c8136a5d4c3355ce, type: 3}
-  m_PrefabInstance: {fileID: 902104963}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &960701157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -514,6 +477,10 @@ MonoBehaviour:
   upgradeBought2: 0
   upgradeBought3: 0
   upgradeBought4: 0
+  upgradeBought5: 0
+  upgradeBought6: 0
+  upgradeBought7: 0
+  upgradeBought8: 0
 --- !u!4 &2060689604
 Transform:
   m_ObjectHideFlags: 0
@@ -997,7 +964,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 619394802}
-  - {fileID: 168629572}
+  - {fileID: 902104963}
   - {fileID: 2814330448001003095}
   - {fileID: 8908339813665000203}
   - {fileID: 960701157}

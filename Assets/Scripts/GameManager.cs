@@ -129,6 +129,11 @@ public class GameManager : MonoBehaviour
         maxHealth += value;
         RefreshUI();
     }
+
+    public void AddToMoveSpeed(float value)
+    {
+        moveSpeed += value;
+    }
     
     public void TakeDamage(float damage)
     {
