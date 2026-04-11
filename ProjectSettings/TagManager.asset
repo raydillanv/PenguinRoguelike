@@ -10,6 +10,8 @@ TagManager:
   - RuneSystem
   - pause
   - Shop
+  - shop
+  - Enemy
   layers:
   - Default
   - TransparentFX

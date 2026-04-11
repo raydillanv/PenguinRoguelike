@@ -94,9 +94,9 @@ namespace Runes
             // Handle completed runes
             foreach (var rune in completed)
             {
-                OnRuneComplete(rune);
                 activeMatches.Remove(rune);
                 unactiveRunes.Add(rune);
+                OnRuneComplete(rune);
             }
 
             // Handle new direction matches (skip runes on cooldown)

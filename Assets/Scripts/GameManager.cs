@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         mana = maxMana;
         _currentStage = SceneManager.GetActiveScene().name;
         RefreshPlayerReference();
-        if (uiManager) uiManager.RefreshValues();
+        RefreshUI();
     }
 
     public void FixedUpdate()
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         if (mana < maxMana)
         {
             mana = Mathf.Min(mana + Mathf.Ceil(manaRegen), maxMana);
-            uiManager.RefreshValues();
+            RefreshUI();
         }
 
     }
@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
     {
         _currentStage = scene.name;
         RefreshPlayerReference();
-        if (uiManager) uiManager.RefreshValues();
+        RefreshUI();
     }
 
     public void VisitStage(string stage)
@@ -126,14 +126,14 @@ public class GameManager : MonoBehaviour
     public void AddToHealth(float value)
     {
         maxHealth += value;
-        uiManager.RefreshValues();
+        RefreshUI();
     }
     
     public void TakeDamage(float damage)
     {
         health -= damage;
         if (health <= 0) ResetLevel();
-        uiManager.RefreshValues();
+        RefreshUI();
     }
 
     public bool ReduceMana(float value)
@@ -145,14 +145,14 @@ public class GameManager : MonoBehaviour
             return false;
         }
         
-        uiManager.RefreshValues();
+        RefreshUI();
         return true;
     }
 
     public void RestoreHealth(float value)
     {
         health = Mathf.Min(health + Mathf.Ceil(value), GameManager.instance.maxHealth);
-        uiManager.RefreshValues();
+        RefreshUI();
     }
 
     public void ResetCharacter() { health = maxHealth; mana = maxMana; }
@@ -173,7 +173,7 @@ public class GameManager : MonoBehaviour
     private void HandleOnHealLooted(int amount)
     {
         RestoreHealth(amount);
-        uiManager.RefreshValues();
+        RefreshUI();
     }
 
     private void HandleOnManaLooted(int amount)
@@ -186,5 +186,10 @@ public class GameManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerBehavior>();
         uiManager = FindAnyObjectByType<Canvas>()?.GetComponent<UIManager>();
+    }
+
+    private void RefreshUI()
+    {
+        if (uiManager) uiManager.RefreshValues();
     }
 }

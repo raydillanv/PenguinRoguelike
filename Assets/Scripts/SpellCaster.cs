@@ -14,6 +14,7 @@ public class SpellCaster : MonoBehaviour
     public Transform FindNearestEnemy(float maxRange)
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        if (enemies == null || enemies.Length == 0) return null;
         Transform nearest = null;
         float minDist = maxRange;
 
