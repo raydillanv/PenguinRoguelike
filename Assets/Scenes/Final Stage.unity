@@ -244,9 +244,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lucien's Odyssey\n\u2018The Penguin Wizard\u2019\n\nDevelopers:\nAdrian\nCayson\nDillan\nHope\nMarco\n\nArt
-    By:\nHope\n\nMusic By:\nPerson\n\nGame Engine: Unity 6.3\n\nAssets Used:\nLots\L\LThanks
-    for Playing.\n\n\n"
+  m_text: "Lucien's Odyssey\r\n\u2018The Penguin Wizard\u2019\r\n\r\nDevelopers:\r\nAdrian\r\nCayson\r\nDillan\r\nHope\r\nMarco\r\n\r\nArt
+    By:\r\nHope\r\n\r\nMusic By:\r\nPerson\r\n\r\nGame Engine: Unity 6.3\r\n\r\nAssets
+    Used:\r\n\r\nPariah: Exclamation points.\r\nhttps://opengameart.org/content/2d-exclamation-marks\r\n\r\nManix
+    Pixie Dream:\r\nhttps://manicpixeldreamgirl.itch.io/campfire-new-32px\r\n\r\nChasers
+    Gaming:\r\nhttps://elthen.itch.io/pixel-art-destructible-objects\r\n\r\nElthen:\r\nhttps://pixelserial.itch.io/rpg-pixel-art-chests\r\n\r\nChests:\r\nhttps://pixelserial.itch.io/rpg-pixel-art-chests\r\n\r\nPotions:\r\nhttps://karsiori.itch.io/pixel-art-potion-pack-animated\r\n\r\nClick
+    Sound:\r\nhttps://freesound.org/people/willy_ineedthatapp_com/sounds/167326/\r\n\r\nThanks
+    for Playing.\r\n\r\n\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -489,7 +493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &972447762
 RectTransform:
   m_ObjectHideFlags: 0
@@ -862,7 +866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1711532878
 RectTransform:
   m_ObjectHideFlags: 0
@@ -878,8 +882,8 @@ RectTransform:
   - {fileID: 972447762}
   m_Father: {fileID: 6179679829729777125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
